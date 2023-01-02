@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+        <style>
+
+            body{
+                margin: 0px;
+            }
+
+            .main-container{
+                background-image: url("D:\\Nishant\\others\\Neon_images\\background-wave.jpg");
+                background-size: cover;
+                height: 100vh;
+                width: 100vw;
+            }
+
+            .details-outer{
+                height: 325px;
+                width: 260px;
+                border-radius: 10px;
+                perspective: 1400px;
+            }
+
+            .details-inner{
+                height: 325px;
+                width: 260px;
+                background-color: white;
+                border-radius: 10px;
+                position: relative;
+                transform: rotateY(0deg);
+                transform-style: preserve-3d;
+                transition: transform 1.5s;
+            }
+
+            .front{
+                height: 325px;
+                width: 260px;
+                background-color: white;
+                border-radius: 10px;
+                position: absolute;
+            }
+
+            .back{
+                height: 325px;
+                width: 260px;
+                padding: 15px;
+                background-color: white;
+                border-radius: 10px;
+                position: absolute;
+                transform: rotateY(180deg);
+                backface-visibility: hidden;
+            }
+
+            .details-inner:hover{
+                transform: rotateY(180deg);
+            }
+
+            .person-img{
+                height: 325px;
+                width: 260px;
+                border-radius: 10px;
+            }
+
+            .person-heading{
+                text-align: center;
+                font-family: 'Courier New', Courier, monospace;
+                color: coral;
+                font-weight: bold;
+            }
+
+            .person-quotes{
+                text-align: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: red;
+                font-size: 22px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="main-container d-flex flex-column justify-content-center">
+            <div class="d-flex justify-content-around">
+                <div class="details-outer">
+                    <div class="details-inner">
+                        <div class="front">
+                            <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1672554295/AccountIcon2_m0dcae.png" alt="" class="person-img">
+                        </div>
+                        <div class="back">
+                            <h3 class="person-heading">Person 1</h3>
+                            <hr>
+                            <p class="person-quotes">You’re braver than you believe, and stronger than you seem, and smarter than you think.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-outer">
+                    <div class="details-inner">
+                        <div class="front">
+                            <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1672554295/AccountIcon2_m0dcae.png" alt="" class="person-img">
+                        </div>
+                        <div class="back">
+                            <h3 class="person-heading">Person 2</h3>
+                            <hr>
+                            <p class="person-quotes">The happiness of your life depends upon the quality of your thoughts.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-outer">
+                    <div class="details-inner">
+                        <div class="front">
+                            <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1672554295/AccountIcon2_m0dcae.png" alt="" class="person-img">
+                        </div>
+                        <div class="back">
+                            <h3 class="person-heading">Person 3</h3>
+                            <hr>
+                            <p class="person-quotes">You’re braver than you believe, and stronger than you seem, and smarter than you think.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
