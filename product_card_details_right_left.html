@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <style>
+
+            body{
+                margin: 0px;
+            }
+
+            .main-container{
+                background-image: url("https://res.cloudinary.com/domn9fwdf/image/upload/v1673540925/floating-cloud_cdcsj4.webp");
+                background-size: cover;
+                height: 100vh;
+                width: 100vw;
+            }
+
+            .cartoon-card{
+                height: 325px;
+                width: 275px;
+                background-color: aliceblue;
+                border-radius: 10px;
+                position: relative;
+                box-shadow: 3px 6px 8px coral;
+            }
+
+            .card-img{
+                height: 325px;
+                width: 275px;
+                border-radius: 10px;
+            }
+
+            .card-content{
+                height: 325px;
+                width: 0px;
+                background-color: orangered;
+                border-radius: 10px;
+                transition: width 0.5s;
+                overflow: hidden;
+                position: absolute;
+                right: 0px;
+                color: white;
+            }
+
+            .cartoon-heading{
+                text-align: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            .cartoon-paragraph{
+                text-align: center;
+                font-family: cursive;
+                padding: 5px;
+            }
+
+            .cartoon-card:hover .card-content{
+                width: 275px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="main-container d-flex flex-column justify-content-center">
+            <div class="d-flex justify-content-around">
+                <div class="cartoon-card">
+                    <div class="card-content">
+                        <h3 class="cartoon-heading">Mickey Mouse</h3>
+                        <hr>
+                        <p class="cartoon-paragraph">Mickey Mouse is an animated cartoon character co-created in 1928 by Walt Disney and Ub Iwerks. The longtime mascot of The Walt Disney Company, Mickey is an anthropomorphic mouse who typically wears red shorts, large yellow shoes, and white gloves.</p>
+                    </div>
+                    <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1672554297/mickey_mouse_PNG25_jowcoq.png" alt="" class="card-img">   
+                </div>
+
+                <div class="cartoon-card">
+                    <div class="card-content">
+                        <h3 class="cartoon-heading">Pikachu</h3>
+                        <hr>
+                        <p class="cartoon-paragraph">Pikachu is a fictional species in the Pokémon media franchise. Designed by Atsuko Nishida and Ken Sugimori, Pikachu first appeared in the 1996 Japanese video games Pokémon Red and Green created by Game Freak and Nintendo, which were released outside of Japan in 1998 as Pokémon Red and Blue.</p>
+                    </div>
+                    <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1672554297/OIP_2_txchs5.jpg" alt="" class="card-img">
+                </div>
+
+                <div class="cartoon-card">
+                    <div class="card-content">
+                        <h3 class="cartoon-heading">Tom & Jerry</h3>
+                        <hr>
+                        <p class="cartoon-paragraph">Tom and Jerry is an American animated media franchise and series of comedy short films created in 1940 by William Hanna and Joseph Barbera. Best known for its 161 theatrical short films by Metro-Goldwyn-Mayer</p>
+                    </div>
+                    <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1672554298/OIP_5_zbpn4j.jpg" alt="" class="card-img">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
