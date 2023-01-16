@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <style>
+
+            body{
+                margin: 0px;
+            }
+
+            .main-container{
+                background-image: url("https://res.cloudinary.com/domn9fwdf/image/upload/v1673876845/RWg5f1_bbey99.webp");
+                background-size: cover;
+                height: 90vh;
+                width: 100vw;
+            }
+
+            .main-heading{
+                height: 10vh;
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                margin: 0px;
+            }
+
+            .coding-card{
+                height: 275px;
+                width: 225px;
+                position: relative;
+                background-color: white;
+                border-radius: 10px;
+            }
+
+            .card-img{
+                height: 275px;
+                width: 225px;
+                border-radius: 10px;
+            }
+
+            .card-content{
+                background-color: aliceblue;
+                border-radius: 10px;
+                overflow: hidden;
+                position: absolute;
+            }
+
+            .html-card{
+                height: 0px;
+                width: 225px;
+                transition: height 0.6s;
+                top: 0px;
+            }
+
+            .css-card{
+                height: 0px;
+                width: 225px;
+                transition: height 0.6s;
+                bottom: 0px;
+            }
+
+            .javascript-card{
+                height: 275px;
+                width: 0px;
+                transition: width 0.6s;
+                left: 0px;
+                top: 0px;
+            }
+
+            .react-card{
+                height: 275px;
+                width: 0px;
+                transition: width 0.6s;
+                right: 0px;
+                top: 0px;
+            }
+
+            .coding-card:hover .html-card{
+                height: 275px;
+            }
+
+            .coding-card:hover .css-card{
+                height: 275px;
+            }
+
+            .coding-card:hover .javascript-card{
+                width: 225px;
+            }
+
+            .coding-card:hover .react-card{
+                width: 225px;
+            }
+
+            .coding-heading{
+                text-align: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-weight: bold;
+                color: coral;
+                font-weight: bold;
+                font-size: 30px;
+            }
+
+            .coding-paragraph{
+                text-align: center;
+                font-family: cursive;
+                color: red;
+            }
+
+            .swipe-type{
+                text-align: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-weight: bold;
+                color: coral;
+                font-weight: bold;
+                font-size: 30px;
+                margin: 20px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1 class="main-heading">Coding Swipe Card</h1>
+        <div class="main-container d-flex flex-column justify-content-center">
+            <div class="d-flex flex-row justify-content-around">
+                <div class="outer-coding-box">
+                    <div class="coding-card">
+                        <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1672554294/210-2104705_html-logo-png-transparent-background_lfslnt.png" alt="" class="card-img">
+                        <div class="card-content html-card">
+                            <h3 class="coding-heading">HTML</h3>
+                            <hr>
+                            <p class="coding-paragraph">HTML stands for HyperText Markup Language. It is used to design web pages using the markup language. HTML is the combination of Hypertext and Markup language. </p>
+                        </div>
+                    </div>
+                    <h3 class="swipe-type">Swipe UP</h3>
+                </div>  
+
+                <div class="outer-coding-box">
+                    <div class="coding-card">
+                        <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1672554294/8cdf4c047e99f7389e76aa4e2e7e2803_aywmdn.png" alt="" class="card-img">
+                        <div class="card-content css-card">
+                            <h3 class="coding-heading">CSS</h3>
+                            <hr>
+                            <p class="coding-paragraph">Cascading Style Sheets, fondly referred to as CSS, is a simply designed language intended to simplify the process of making web pages presentable. </p>
+                        </div>
+                    </div>
+                    <h3 class="swipe-type">Swipe DOWN</h3>
+                </div>  
+
+                <div class="outer-coding-box">
+                    <div class="coding-card">
+                        <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1672554295/19224697601_6b600f21eb_hza3iy.jpg" alt="" class="card-img">
+                        <div class="card-content javascript-card">
+                            <h3 class="coding-heading">JavaScript</h3>
+                            <hr>
+                            <p class="coding-paragraph">JavaScript is the world's most popular programming language. JavaScript is the programming language of the Web.</p>
+                        </div>
+                    </div>
+                    <h3 class="swipe-type">Swipe LEFT</h3>
+                </div>  
+
+                <div class="outer-coding-box">
+                    <div class="coding-card">
+                        <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1672554295/angular-vs-react-vs-vue2_cpuwxz.png" alt="" class="card-img">
+                        <div class="card-content react-card">
+                            <h3 class="coding-heading">React</h3>
+                            <hr>
+                            <p class="coding-paragraph"> React is a declarative, efficient, and flexible JavaScript library for building user interfaces. ‘V’ denotes the view in MVC.</p>
+                        </div>
+                    </div>
+                    <h3 class="swipe-type">Swipe RIGHT</h3>
+                </div>  
+            </div>
+        </div>
+    </body>
+</html>
