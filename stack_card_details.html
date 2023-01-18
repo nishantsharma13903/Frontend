@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <style>
+
+            body{
+                margin: 0px;
+            }
+
+            .main-container{
+                background-image: url("https://res.cloudinary.com/domn9fwdf/image/upload/v1673876845/RWg5f1_bbey99.webp");
+                background-size: cover;
+                height: 100vh;
+                width: 100vw;
+            }
+
+            .stack-card-container:hover .stack-card1{
+                transform: rotate(-5deg);
+                height: 250px;
+            }
+
+            .stack-card-container:hover .stack-card2{
+                transform: rotate(-10deg);
+                height: 250px;
+            }
+
+            .stack-card-container:hover .stack-card3{
+                transform: rotate(-15deg);
+                height: 250px;
+            }
+
+            .stack-card-container:hover .stack-card4{
+                transform: rotate(-20deg);
+                height: 250px;
+            }
+
+            .stack-card-container:hover .stack-card5{
+                transform: rotate(-25deg);
+                height: 250px;
+            }
+
+            .stack-card-container:hover .stack-card6{
+                transform: rotate(-30deg);
+                height: 250px;
+            }
+
+            .stack-card1{
+                background-color: black;
+                position: absolute;
+                border: 1px solid white;
+                border-radius: 4px;
+                height: 200px;
+                width: 250px;
+                z-index: 1;
+                transition: transform 1.5s,height 1s;
+            }
+
+            .stack-card2{
+                background-color: black;
+                position: absolute;
+                border: 1px solid white;
+                border-radius: 4px;
+                height: 200px;
+                width: 250px;
+                z-index: 1;
+                transition: transform 1.5s,height 1s;
+            }
+
+            .stack-card3{
+                background-color: black;
+                position: absolute;
+                border: 1px solid white;
+                border-radius: 4px;
+                height: 200px;
+                width: 250px;
+                z-index: 1;
+                transition: transform 1.5s,height 1s;
+            }
+
+            .stack-card4{
+                background-color: black;
+                position: absolute;
+                border: 1px solid white;
+                border-radius: 4px;
+                height: 200px;
+                width: 250px;
+                z-index: 1;
+                transition: transform 1.5s,height 1s;
+            }
+
+            .stack-card5{
+                background-color: black;
+                position: absolute;
+                transform: rotate(0deg);
+                border: 1px solid white;
+                border-radius: 4px;
+                height: 200px;
+                width: 250px;
+                transition: transform 1.5s,height 1s;
+                z-index: 1;
+            }
+
+            .stack-card6{
+                background-color: black;
+                position: absolute;
+                transform: rotate(0deg);
+                border: 1px solid white;
+                border-radius: 4px;
+                height: 200px;
+                width: 250px;
+                transition: transform 1.5s,height 1s;
+                z-index: 1;
+            }
+
+            .main-stack{
+                position: relative;
+                height: 250px;
+                width: 250px;
+                z-index: 2;
+            }
+
+            .card-img{
+                height: 200px;
+                width: 250px;
+            }
+
+            .card-content{                
+                background-color: black;
+                height: 0px;
+                transition: height 1s;
+                overflow: hidden;
+            }
+
+            .stack-card-container:hover .card-content{
+                height: 50px;
+            }
+
+            p{
+                color: white;
+                text-align: center;
+                font-weight: bold;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="main-container d-flex flex-column justify-content-center">
+            <div class="d-flex justify-content-around">
+                <div class="stack-card-container">
+                    <div class="stack-card1"></div>
+                    <div class="stack-card2"></div>
+                    <div class="stack-card3"></div>
+                    <div class="stack-card4"></div>
+                    <div class="stack-card5"></div>
+                    <div class="stack-card6"></div>
+                    <div class="main-stack">
+                        <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1674054787/74d38be29d90891d43e09686701b5c89_ganysl.jpg" alt="" class="card-img">
+                        <div class="card-content">
+                            <p>I am AntMan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-card-container">
+                    <div class="stack-card1"></div>
+                    <div class="stack-card2"></div>
+                    <div class="stack-card3"></div>
+                    <div class="stack-card4"></div>
+                    <div class="stack-card5"></div>
+                    <div class="stack-card6"></div>
+                    <div class="main-stack">
+                        <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1674054787/578f784bdff9cda89352fe95393c5973_dxvgv7.jpg" alt="" class="card-img">
+                        <div class="card-content">
+                            <p>I am IronMan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
