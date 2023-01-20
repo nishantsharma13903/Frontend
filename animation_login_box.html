@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <style>
+
+            body{
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .box{
+                height: 100px;
+                width: 100px;
+                border-radius: 30px;
+                padding: 20px;
+                background-color: red;
+                animation-name: login-box;
+                animation-duration: 2s;
+                animation-delay: 1s;
+                animation-fill-mode: both;
+            }
+
+            form{
+                animation-name: login-content;
+                animation-duration: 1s;
+                animation-delay: 2.5s;
+                animation-fill-mode: both;
+            }
+
+
+            label{
+                font-size: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: left;
+            }
+
+            input{
+                width: 100%;
+                height: 35px;
+                border-radius: 10px;
+                padding-left: 10px;
+            }
+
+            h2{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+            }
+
+            @keyframes login-box{
+                0% {height: 100px; width: 100px; background-color: brown; opacity: 0;}
+                100% {height: 425px; width: 500px; background-color: coral; opacity: 1;}
+            }
+
+            @keyframes login-content{
+                0% { opacity: 0;}
+                100% {opacity: 1;}
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="box">
+            <h2>LOGIN</h2>
+            <form>
+                <label>Name</label>
+                <input type="text" placeholder="Enter your Name...">
+                <br><br>
+                <label>Address</label>
+                <input type="text" placeholder="Enter address here...">
+                <br><br>
+                <label>Contact</label>
+                <input type="text" placeholder="Enter Contant details here...">
+                <br><br>
+                <div style="text-align: center;">
+                    <button class="btn btn-danger">Continue</button>
+                </div>
+            </form>
+        </div>
+
+    </body>
+
+</html>
