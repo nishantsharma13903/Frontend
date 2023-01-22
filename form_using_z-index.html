@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stack Form</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <style>
+
+            body{
+                margin: 0px;
+                padding: 0px; 
+            }
+
+            .form-container{
+                background-image: linear-gradient(black,grey);
+                height: 100vh;
+                width: 100vw;
+            }
+
+            .form-heading{
+                font-family: 'Times New Roman', Times, serif;
+                text-align: center;
+                text-decoration: underline;
+                color: red;
+            }
+
+            input{
+                width: 100%;
+                border-width: 0px;
+                border-bottom: 2px solid red;
+                outline: none;
+            }
+
+            input:focus{
+                border-width: 0px;
+                border-bottom: 2px solid red;
+            }
+
+            .form-card{
+                height: 375px;
+                width: 25vw;
+                position: relative;
+            }
+
+            .signup-form{
+                background-color: whitesmoke;
+                width: 25vw;
+                padding: 15px;
+                position: absolute;
+                border: 1px solid red;
+                z-index: 2;
+                transition: transform 2s, z-index 2s;
+            }
+
+            .login-form{
+                background-color: whitesmoke;
+                width: 25vw;
+                padding: 15px;
+                position: absolute;
+                transform: rotate(5deg);
+                z-index: 1;
+                transition: transform 2s, z-index 2s;
+            }
+
+            .form-option{
+                color: white;
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+                margin: 15px;
+            }
+
+            .option-link:hover{
+                cursor: pointer;
+            }
+
+            #active-signup{
+                color: red;
+                text-decoration: underline;
+            }
+
+            @keyframes move-form{
+                0%{left: 0px}
+                50%{left: 500px;}
+                100%{left: 0px;}
+            }
+
+
+        </style>
+
+    </head>
+
+    <body>
+    
+        <div class="form-container d-flex flex-column justify-content-center">
+
+            <div class="form-option">
+                <p><span class="option-link" onclick=changeForm(2) id="active-signup">Signup</span> / <span class="option-link" onclick=changeForm(1) id="active-login">login</span></p>
+            </div>
+
+            <div class="d-flex justify-content-center">
+            <div class="form-card">
+                <form action="#" class="login-form" id="login">
+                    <h2 class="form-heading">Login</h2>
+                    <label for="">Email</label><br>
+                    <input type="email">
+                    <br><br>
+                    <label for="">Password</label><br>
+                    <input type="password">
+                    <br><br>
+                    <label for="">Confirm Password</label><br>
+                    <input type="password">
+                    <br><br>
+                    <div style="text-align: center;">
+                        <button class="btn btn-danger">Submit</button>
+                    </div>
+                </form>
+    
+                <form action="#" class="signup-form" id="signup">
+                    <h2 class="form-heading">Signup</h2>
+                    <label for="">Name</label><br>
+                    <input type="text">
+                    <br><br>
+                    <label for="">Email</label><br>
+                    <input type="email">
+                    <br><br>
+                    <label for="">Password</label><br>
+                    <input type="password">
+                    <br><br>
+                    <div style="text-align: center;">
+                        <button class="btn btn-danger">Submit</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+            
+        </div>  
+        
+        <script>
+            function changeForm(num){
+                if(num == 1){
+                    document.getElementById("login").style.zIndex = "2";
+                    document.getElementById("signup").style.zIndex = "1";
+                    document.getElementById("login").style.transform = "rotate(0deg)";
+                    document.getElementById("signup").style.transform = "rotate(5deg)";
+                    document.getElementById("login").style.border = "1px solid red";
+                    document.getElementById("login").style.boxShadow = "2px 3px 5px grey";
+                    document.getElementById("signup").style.boxShadow = "none";
+                    document.getElementById("signup").style.border = "none";
+                    document.getElementById("active-signup").style.color = "white";
+                    document.getElementById("active-login").style.color = "red";
+                    document.getElementById("active-signup").style.textDecoration = "none";
+                    document.getElementById("active-login").style.textDecoration = "underline";
+                }
+                else if(num == 2){
+                    document.getElementById("signup").style.zIndex = "2";
+                    document.getElementById("login").style.zIndex = "1";
+                    document.getElementById("signup").style.transform = "rotate(0deg)";
+                    document.getElementById("login").style.transform = "rotate(5deg)";
+                    document.getElementById("signup").style.boxShadow = "1px 2px 3px grey";
+                    document.getElementById("login").style.boxShadow = "none";
+                    document.getElementById("signup").style.border = "1px solid red";
+                    document.getElementById("login").style.border = "none";
+                    document.getElementById("active-signup").style.color = "red";
+                    document.getElementById("active-login").style.color = "white";
+                    document.getElementById("active-login").style.textDecoration = "none";
+                    document.getElementById("active-signup").style.textDecoration = "underline";
+                }
+            }
+        </script>
+    </body>
+</html>
