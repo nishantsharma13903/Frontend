@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <title>Overlay Profile Card</title>
+
+        <style>
+
+            .main-container{
+                background-image: linear-gradient(white,whitesmoke,grey);
+                height: 100vh;
+            }
+
+            .heading{
+                text-align: center;
+                font-family: monospace;
+                padding: 10px; 
+            }
+
+            .profile-card{
+                position: relative;
+                margin: 80px 0px;
+            }
+
+            .profile-card-img{
+                height: 300px;
+                width: 300px;
+            }
+
+            .details{
+                position: absolute;
+                top: 0px;
+                height: 300px;
+                width: 300px;
+                padding: 20px;
+                background-color: rgb(182, 220, 235);
+                text-align: center;
+                font-weight: bold;
+                opacity: 0;
+                transition: opacity 0.5s;
+            }
+
+            .profile-card:hover .details{
+                opacity: 0.9;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        
+        <div class="main-container">
+            <h1 class="heading">Profile Card - Overlay Effect</h1>
+            <div class="d-flex justify-content-center">
+                <div class="profile-card">
+                    <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1674925665/download_lllia2.jpg" alt="image" class="profile-card-img">
+                    <div class="details">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, aut temporibus fugit, velit architecto odit et nisi a omnis ipsam optio molestias, eum voluptatum amet eos deserunt hic numquam praesentium.</p>
+                        <br>
+                        <button class="btn btn-primary">Click Here</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
