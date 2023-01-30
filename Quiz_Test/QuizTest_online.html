@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="QuizTest_online.css">
+    </head>
+
+    <body>
+
+        <div class="navbar">
+            <div class="navbar-sec1">
+                <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1670152571/Web_capture_4-12-2022_164339_www.bing.com_oypyik.jpg" class="navbar-sec1-img">
+            </div>
+            
+            <div class="navbar-sec2 d-flex">
+                <div class="nb-sec2-box nblink-home">
+                    <a href="#" class="navbar-link">HOME</a>
+                    <div class="dpdcontent">
+                        <p>Learning computer programming teaches you to see the problems in the light of solutions. For every problem you may face, you start to brainstorm ideas on how to solve it. Fruitful results that come out of brainstorming and fixing problems will give you a positive outlook, and toughen you up to act on the problem however hard it may be.</p>
+                        <p></p>Learning to code will teach you to understand this world, to solve the problems we encounter every day in our life and that is the best thing you can do to change this world. You help people by using computer technologies and you earn respect for that too.
+                    </div>
+                </div>
+                <div class="nb-sec2-box nblink-rules">
+                    <a href="#" class="navbar-link">RULES</a>
+                    <div class="dpdcontent">
+                        <ul>
+                            <li>You have 5 questions.</li>
+                            <li>You need to attempt all questions.</li>
+                            <li>You have to select one option out of four.</li>
+                            <li>Once you clicked on any option,your score will be updated according to that option.</li>
+                            <li>You can see previous question,but score will not change.</li>
+                            <li>Your test status will show when you click on Submit button.</li>
+                            <li>Please, Give your relevant Details</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nb-sec2-box nblink-more">
+                    <a href="#" class="navbar-link">MORE</a>
+                    <div class="dpdcontent">
+                        <p>Here you can test your knowledge about some programming languages such as : </p>
+                        <ul>
+                            <li>C language</li>
+                            <li>Java</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nb-sec2-box nblink-about">
+                    <a href="#" class="navbar-link">ABOUT</a>
+                    <div class="dpdcontent">
+                        <h4>Type : Quiz Test</h4>
+                        <h4>Test Available : HTML, CSS, JavaScript, C language, Python, and Java</h4>
+                        <h4>Skills Used : HTML, CSS, Bootstrap, and Javascript</h4>
+                        <h4>Created By : Nishant Sharma</h4>
+                        <h4>Contact : 892366XXXX</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-section">
+
+            <div class="user-account d-flex">
+                <div class="user-greeting fifty-percent">
+                    <p id="greeting">Hii, User</p>
+                </div>
+                <div class="fifty-percent d-flex justify-content-end user-button">
+                    <button class="btn btn-danger" onclick="window.location.href='#user-details-section'" id="givedetails">GIVE YOUR DETAILS</button>
+                    <h2 id="userscore" class="user-score">Score: 0</h2>
+                </div>
+            </div>
+
+            <div id="homepage-section">
+                
+                <!-- Carousel -->
+                <div>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1670675248/maxresdefault_lgussb.jpg" class="d-block w-100 bs-front-img" alt="..." >
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1670675255/R_rlwhyh.gif" class="d-block w-100 bs-front-img" alt="..." >
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1670675272/maxresdefault_1_mzyo7s.jpg" alt="..." class="bs-front-img">
+                        </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quiz Card  -->
+                <div>
+                    <div class="bs-quiz-container d-flex justify-content-center">
+                        <div class="bs-quiz">
+                            <div class="bs-quiz-card">
+                                <h1 class="bs-quiz-heading">IT'S TIME <br> FOR A <br> QUIZ</h1>
+                                <h1 class="bs-quiz-heading" id="bs-quiz-heading-small">IT'S TIME <br> FOR A <br> QUIZ</h1>
+                            </div>
+
+                            <div class="bs-quiz-card">
+                                <p class="bs-quiz-paragraph">Learning programming teaches you to see the problems in the light of solutions. For every problem you may face, you start to brainstorm ideas on how to solve it. Fruitful results that come out of brainstorming and fixing problems will give you a positive outlook.</p>
+                                <div class="d-flex justify-content-center">
+                                    <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1670675068/cartoon-brain-1024x902_z3go6q.webp" alt="" class="brain-img">
+                                </div>
+                            </div>  
+                            
+                        </div>
+                    </div>
+
+                    <div class="bs-quiz-container d-flex justify-content-center">
+                        <div class="bs-quiz d-flex">
+                            <div>
+                                <h1 class="bs-quiz-heading" id="bs-quiz-heading-small">IT'S TIME <br> To Train <br> Your Brain</h1>
+                            </div>
+                            <div class="bs-quiz-card">
+                                <p class="bs-quiz-paragraph">Learning to code will teach you to understand this world, to solve the problems we encounter every day in our life and that is the best thing you can do to change this world. You help people by using computer technologies and you earn respect for that too.</p>
+                                <div class="d-flex justify-content-center">
+                                    <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1670675368/R_eewkww.jpg" alt="" class="brain-img">
+                                </div>
+                            </div>
+                            <div class="bs-quiz-card">
+                                <h1 class="bs-quiz-heading">IT'S TIME <br> To Train <br> Your Brain</h1>
+                            </div>         
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Getting Details -->
+                <div>
+                    <div id="user-details-section">
+                        <div class="d-flex justify-content-center">
+                            <div class="user-details">
+                                <h2 class="center-element user-details-heading">Enter Your Details</h2>
+                                <hr>
+                                <label for="username" id="labelname"><b>Name : </b><span style="display:hide;" id="requiredinputname">*</span></label>
+                                <br>
+                                <input type="text" placeholder="Enter Name Here" id="username" required>
+                                <br><br>
+                                <label for="Contact" id="labelcontact"><b>Contact Number : </b><span style="display:hide;" id="requiredinputcno"></span></label>
+                                <br>
+                                <input type="tel" placeholder="+91">
+                                <br>
+                                <br>
+                                <div class="center-element">  
+                                    <button class="btn btn-primary" onclick = showUserName()>Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="d-flex justify-content-center">
+                            <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1670675379/done_successfully_qqksqh.png" alt="" class="done-successfuly" id="done-section">
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Test Your Knowledge -->
+                <div>
+                    <h2 class="center-element tyk-heading">TEST YOUR KNOWLEDGE</h2>
+
+                    <div class="card-container">
+
+                        <div class="quiz-card" id="tyk-bookmark-html">
+                            <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1671376238/210-2104705_html-logo-png-transparent-background_wkyreu.png" alt="" class="quiz-card-img">
+                            <div class="center-element quiz-card-content">
+                                <h2 class="user-test-name">HTML Test</h2>
+                                <p>Test your Knowledge</p>
+                                <div class="center-element">
+                                    <button class="btn btn-primary" onclick=showtest(1)>Take Test</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quiz-card" id="tyk-bookmark-css">
+                            <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1671376237/css3_nk6vps.png" alt="" class="quiz-card-img">
+                            <div class="center-element quiz-card-content">
+                                <h2 class="user-test-name">CSS Test</h2>
+                                <p>Test your Knowledge</p>
+                                <div class="center-element">
+                                    <button class="btn btn-primary" onclick=showtest(2)>Take Test</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quiz-card" id="tyk-bookmark-javascript">
+                            <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1671376237/19224697601_6b600f21eb_iy7iez.jpg" alt="" class="quiz-card-img">
+                            <div class="center-element quiz-card-content">
+                                <h2 class="user-test-name">JavaScript Test</h2>
+                                <p>Test your Knowledge</p>
+                                <div class="center-element">
+                                    <button class="btn btn-primary" onclick=showtest(3)>Take Test</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="card-container d-flex justify-content-around">
+
+                        <div class="quiz-card" id="tyk-bookmark-clanguage">
+                            <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1671376614/main-qimg-603098ea33b803933b72196b310906f7_jzpqoj.png" alt="" class="quiz-card-img">
+                            <div class="center-element quiz-card-content">
+                                <h2 class="user-test-name">C Language Test</h2>
+                                <p>Test your Knowledge</p>
+                                <div class="center-element">
+                                    <button class="btn btn-primary" onclick=showtest(4)>Take Test</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quiz-card" id="tyk-bookmark-python">
+                            <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1671454870/python_glh8uq.png" alt="" class="quiz-card-img">
+                            <div class="center-element quiz-card-content">
+                                <h2 class="user-test-name">Python Test</h2>
+                                <p>Test your Knowledge</p>
+                                <div class="center-element">
+                                    <button class="btn btn-primary" onclick=showtest(5)>Take Test</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quiz-card" id="tyk-bookmark-corejava">
+                            <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1671376916/85390-java-language-text-programming-logo-programmer_giz3q3.png" alt="" class="quiz-card-img">
+                            <div class="center-element quiz-card-content">
+                                <h2 class="user-test-name">Java Test</h2>
+                                <p>Test your Knowledge</p>
+                                <div class="center-element">
+                                    <button class="btn btn-primary" onclick=showtest(6)>Take Test</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <br>
+                <hr>
+
+                <!-- FAQS -->
+                <div class="d-flex justify-content-center">
+                    <div class="bs-faqs">
+                        <h2 class="bs-faqs-heading">Frequently Asked Questions</h2>
+                        <div class="bs-faqs-content">
+                            <div class="d-flex">
+                                <h3 class="bs-faqs-question">1. What is Web Development?</h3>
+                                <div class="fifty-percent d-flex justify-content-end">
+                                    <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1670675552/2132010_mb0cyr.png" alt="" class="bs-faqs-dropdown-img1" onclick="displayAnswer(1)" id="dpdshowimage1">
+                                    <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1670675560/25_dropdown_menu_down_arrow-512_crsxuc.webp" alt="" class="bs-faqs-dropdown-img2" onclick="hideAnswer(1)" id="dpdhideimage1">
+                                </div>
+                            </div>
+                            <p class="faqs-dpd-content" id="Answer1">Web development refers to the creating, building, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites.</p>
+                        </div>
+
+                        <div class="bs-faqs-content">
+                            <div class="d-flex">
+                                <h3 class="bs-faqs-question">2. Why Java?</h3>
+                                <div class="fifty-percent d-flex justify-content-end">
+                                    <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1670675552/2132010_mb0cyr.png" alt="" class="bs-faqs-dropdown-img1" onclick="displayAnswer(2)" id="dpdshowimage2">
+                                    <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1670675560/25_dropdown_menu_down_arrow-512_crsxuc.webp" alt="" class="bs-faqs-dropdown-img2" onclick="hideAnswer(2)" id="dpdhideimage2">
+                                </div>
+                            </div>
+                            <p class="faqs-dpd-content" id="Answer2">Java is a popular programming language due to its simple and easy-to-learn syntax. It has a large base of resources available to developers, from tutorials and guides to help support forums and videos. This makes it an ideal choice for both experienced developers who need a refresher or those just starting in programming.</p>
+                        </div>
+
+                        <div class="bs-faqs-content">
+                            <div class="d-flex">
+                                <h3 class="bs-faqs-question">3. Why Python?</h3>
+                                <div class="fifty-percent d-flex justify-content-end">
+                                    <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1670675552/2132010_mb0cyr.png" alt="" class="bs-faqs-dropdown-img1" onclick="displayAnswer(3)" id="dpdshowimage3">
+                                    <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1670675560/25_dropdown_menu_down_arrow-512_crsxuc.webp" alt="" class="bs-faqs-dropdown-img2" onclick="hideAnswer(3)" id="dpdhideimage3">
+                                </div>
+                            </div>
+                            <p class="faqs-dpd-content" id="Answer3">Python is a very popular programming language today and often needs an introduction. It is widely used in various business sectors, such as programming, web development, machine learning, and data science.</p>
+                        </div>
+
+                        <div class="bs-faqs-content">
+                            <div class="d-flex">
+                                <h3 class="bs-faqs-question">4. What will you learn here?</h3>
+                                <div class="fifty-percent d-flex justify-content-end">
+                                    <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1670675552/2132010_mb0cyr.png" alt="" class="bs-faqs-dropdown-img1" onclick="displayAnswer(4)" id="dpdshowimage4">
+                                    <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1670675560/25_dropdown_menu_down_arrow-512_crsxuc.webp" alt="" class="bs-faqs-dropdown-img2" onclick="hideAnswer(4)" id="dpdhideimage4">
+                                </div>
+                            </div>
+                            <p class="faqs-dpd-content" id="Answer4">Learning computer programming teaches you to see the problems in the light of solutions. For every problem you may face, you start to brainstorm ideas on how to solve it. Fruitful results that come out of brainstorming and fixing problems will give you a positive outlook, and toughen you up to act on the problem however hard it may be.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <hr>
+
+                <!-- End Section links -->
+                <div class="bs-end">
+                <div class="d-flex justify-content-around">
+                    <div>
+                        <h2 class="bs-end-heading">Quick Links</h2>
+                        <ul>
+                            <li><a href="#tyk-bookmark-html" class="bs-end-link">HTML</a></li>
+                            <li><a href="#tyk-bookmark-css" class="bs-end-link">CSS</a></li>
+                            <li><a href="#tyk-bookmark-javascript" class="bs-end-link">JavaScript</a></li>
+                            <li><a href="#tyk-bookmark-clanguage" class="bs-end-link">C Language</a></li>
+                            <li><a href="#tyk-bookmark-python" class="bs-end-link">Python</a></li>
+                            <li><a href="#tyk-bookmark-corejava" class="bs-end-link">Java</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="bs-end-heading">Follow On</h2>
+                        <ul>
+                            <li><a href="#" class="bs-end-link">Facebook</a></li>
+                            <li><a href="#" class="bs-end-link">Twitter</a></li>
+                            <li><a href="#" class="bs-end-link">Instagram</a></li>
+                            <li><a href="#" class="bs-end-link">Linkedin</a></li>
+                            <li><a href="#" class="bs-end-link">Github</a></li>
+                            <li><a href="#" class="bs-end-link">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="bs-end-link center-element note">Note: Follow on links are not working currently.</p>
+                </div>
+
+            </div>
+
+            <div id="html-test">
+                <div class="test-bgcolor" id="rulesoftest-html">
+                    <div class="test-background d-flex justify-content-center align-items-center">
+                        <div class="test-rules">
+                            <h2 class="center-element">Rules</h2>
+                            <ul>
+                                <li>You have 5 questions.</li>
+                                <li>You need to attempt all questions.</li>
+                                <li>You have to select one option out of four.</li>
+                                <li>Once you clicked on any option,your score will be updated according to that option.</li>
+                                <li>You can see previous question,but score will not change.</li>
+                                <li>Your test status will show when you click on Submit button.</li>
+                            </ul>
+                            <div class="center-element"><button class="btn btn-primary" onclick= displayTest(1)>START</button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-bgcolor" id="html-test-mcq">
+                    <div class="test-background d-flex justify-content-center align-items-center">
+                        <div class="mcq-test-container">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <progress value="0" max="5" class="progress-bar" id="prog-html"></progress>
+                                <p class="question-no" id="mcq-question-no-html">1/5</p>
+                            </div>
+                            <div id="html-q1">
+                                <hr>
+                                <br>
+                                <b><p>In which part of the HTML metadata is contained?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="html-q1" id="html-q1o1" value="opt1" class="mcq-option-input">
+                                    <label for="html-q1o1" class="mcq-option"><b>head tag</b></label>
+                                    <br>
+                                    <input type="radio" name="html-q1" id="html-q1o2" value="opt2" class="mcq-option-input">
+                                    <label for="html-q1o2" class="mcq-option"><b>html tag</b></label>
+                                    <br>
+                                    <input type="radio" name="html-q1" id="html-q1o3" value="opt3" class="mcq-option-input">
+                                    <label for="html-q1o3" class="mcq-option"><b>body tag</b></label>
+                                    <br>
+                                    <input type="radio" name="html-q1" id="html-q1o4" value="opt4" class="mcq-option-input">
+                                    <label for="html-q1o4" class="mcq-option"><b>title tag</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption1-html"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(1,1)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(1,1) >Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+
+                            <div id="html-q2">
+                                <hr>
+                                <br>
+                                <b><p>In HTML, which attribute is used to create a link that opens in a new window tab?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="html-q2" id="html-q2o1" value="opt1" class="mcq-option-input">
+                                    <label for="html-q2o1" class="mcq-option"><b> src=”_blank”</b></label>
+                                    <br>
+                                    <input type="radio" name="html-q2" id="html-q2o2" value="opt2" class="mcq-option-input">
+                                    <label for="html-q2o2" class="mcq-option"><b>alt=”_blank”</b></label>
+                                    <br>
+                                    <input type="radio" name="html-q2" id="html-q2o3" value="opt3" class="mcq-option-input">
+                                    <label for="html-q2o3" class="mcq-option"><b>target=”_self”</b></label>
+                                    <br>
+                                    <input type="radio" name="html-q2" id="html-q2o4" value="opt4" class="mcq-option-input">
+                                    <label for="html-q2o4" class="mcq-option"><b>target=”_blank”</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption2-html"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(1,2)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(1,2)>Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+
+                            <div id="html-q3">
+                                <hr>
+                                <br>
+                                <b><p>HTML web pages can be read and rendered by</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="html-q3" id="html-q3o1" value="opt1" class="mcq-option-input">
+                                    <label for="html-q3o1" class="mcq-option"><b>Compiler</b></label>
+                                    <br>
+                                    <input type="radio" name="html-q3" id="html-q3o2" value="opt2" class="mcq-option-input">
+                                    <label for="html-q3o2" class="mcq-option"><b>Server</b></label>
+                                    <br>
+                                    <input type="radio" name="html-q3" id="html-q3o3" value="opt3" class="mcq-option-input">
+                                    <label for="html-q3o3" class="mcq-option"><b>Web Browser</b></label>
+                                    <br>
+                                    <input type="radio" name="html-q3" id="html-q3o4" value="opt4" class="mcq-option-input">
+                                    <label for="html-q3o4" class="mcq-option"><b>Interpreter</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption3-html"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(1,3)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(1,3)>Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+
+                            <div id="html-q4">
+                                <hr>
+                                <br>
+                                <b><p>The correct sequence of HTML tags for starting a webpage is -</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="html-q4" id="html-q4o1" value="opt1" class="mcq-option-input">
+                                    <label for="html-q4o1" class="mcq-option"><b>Head, Title, HTML, body</b></label>
+                                    <br>
+                                    <input type="radio" name="html-q4" id="html-q4o2" value="opt2" class="mcq-option-input">
+                                    <label for="html-q4o2" class="mcq-option"><b>HTML, Body, Title, Head</b></label>
+                                    <br>
+                                    <input type="radio" name="html-q4" id="html-q4o3" value="opt3" class="mcq-option-input">
+                                    <label for="html-q4o3" class="mcq-option"><b>HTML, Head, Title, Body</b></label>
+                                    <br>
+                                    <input type="radio" name="html-q4" id="html-q4o4" value="opt4" class="mcq-option-input">
+                                    <label for="html-q4o4" class="mcq-option"><b>HTML, Script, Title, Body</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption4-html"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(1,4)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(1,4)>Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+
+                            <div id="html-q5">
+                                <hr>
+                                <br>
+                                <b><p>Which attribute is used to name an element uniquely?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="html-q5" id="html-q5o1" value="opt1" class="mcq-option-input">
+                                    <label for="html-q5o1"html- class="mcq-option"><b>class</b></label>
+                                    <br>
+                                    <input type="radio" name="html-q5" id="html-q5o2" value="opt2" class="mcq-option-input">
+                                    <label for="html-q5o2" class="mcq-option"><b>id</b></label>
+                                    <br>
+                                    <input type="radio" name="html-q5" id="html-q5o3" value="opt3" class="mcq-option-input">
+                                    <label for="html-q5o3" class="mcq-option"><b>dot</b></label>
+                                    <br>
+                                    <input type="radio" name="html-q5" id="html-q5o4" value="opt4" class="mcq-option-input">
+                                    <label for="html-q5o4" class="mcq-option"><b>all of these</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption5-html"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(1,5)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(1,5) id="lasthtmlquestionbtn">Next</button>
+                                            <button class="btn btn-danger np-button" onclick=endTest(1) id="endhtmltestbtn">Submit</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-bgcolor" id="end-test-html">
+                    <div class="test-background d-flex justify-content-center align-items-center">
+                        <div class="scoreboard-container">
+                            <div class="d-flex">
+                                <div class="scoreboard-section d-flex flex-column">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1672554298/OIP_12_ath2qq.jpg" alt="image" class="scoreboard-image">
+                                    </div>
+                                    <p class="scoreboard-username" id="showusername-html"></p>
+                                    <br><br>
+                                    <p class="scoreboard-status" id="showuserstatus-html"></p>
+                                    <br>
+                                    <div class="center-element">
+                                        <button class="btn btn-outline-danger scoreboard-button" onclick=goToHome(1)>Home</button>
+                                        <button class="btn btn-outline-danger scoreboard-button" onclick=goToHome(1)>Next Test</button>
+                                    </div>
+                                </div>
+                                <div class="scoreboard-section d-flex flex-column">
+                                    <div class="scoreboard-section-box">
+                                        <h4 class="question-info">Total</h4>
+                                        <p class="answer-info">5</p>
+                                    </div>
+                                    <div class="scoreboard-section-box">
+                                        <h4 class="question-info">Correct</h4>
+                                        <p class="answer-info" id="correct-html"></p>
+                                    </div>
+                                    <div class="scoreboard-section-box">
+                                        <h4 class="question-info">Incorrect</h4>
+                                        <p class="answer-info" id="incorrect-html"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+
+            </div>
+
+            <div id="css-test">
+                <div class="test-bgcolor" id="rulesoftest-css">
+                    <div class="test-background d-flex justify-content-center align-items-center">
+                        <div class="test-rules">
+                            <h2 class="center-element">Rules</h2>
+                            <ul>
+                                <li>You have 5 questions.</li>
+                                <li>You need to attempt all questions.</li>
+                                <li>You have to select one option out of four.</li>
+                                <li>Once you clicked on any option,your score will be updated according to that option.</li>
+                                <li>You can see previous question,but score will not change.</li>
+                                <li>Your test status will show when you click on Submit button.</li>
+                            </ul>
+                            <div class="center-element"><button class="btn btn-primary" onclick= displayTest(2)>START</button></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="test-bgcolor" id="css-test-mcq">
+                    <div class="test-background d-flex justify-content-center align-items-center">
+                        <div class="mcq-test-container">
+            
+                            <div class="d-flex justify-content-center align-items-center">
+                                <progress value="0" max="5" class="progress-bar" id="prog-css"></progress>
+                                <p class="question-no" id="mcq-question-no-css">1/5</p>
+                            </div>
+                            
+                            <div id="css-q1">
+                                <hr>
+                                <br>
+                                <b><p>Which of the following CSS framework is used to create a responsive design?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="css-q1" id="css-q1o1" value="opt1" class="mcq-option-input">
+                                    <label for="css-q1o1" class="mcq-option"><b>django</b></label>
+                                    <br>
+                                    <input type="radio" name="css-q1" id="css-q1o2" value="opt2" class="mcq-option-input">
+                                    <label for="css-q1o2" class="mcq-option"><b>rails</b></label>
+                                    <br>
+                                    <input type="radio" name="css-q1" id="css-q1o3" value="opt3" class="mcq-option-input">
+                                    <label for="css-q1o3" class="mcq-option"><b>larawell</b></label>
+                                    <br>
+                                    <input type="radio" name="css-q1" id="css-q1o4" value="opt4" class="mcq-option-input">
+                                    <label for="css-q1o4" class="mcq-option"><b>bootstrap</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption1-css"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(2,1)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(2,1) >Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                            <div id="css-q2">
+                                <hr>
+                                <br>
+                                <b><p>Which of the following CSS property is used to make the text bold?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="css-q2" id="css-q2o1" value="opt1" class="mcq-option-input">
+                                    <label for="css-q2o1" class="mcq-option"><b>text-decoration: bold</b></label>
+                                    <br>
+                                    <input type="radio" name="css-q2" id="css-q2o2" value="opt2" class="mcq-option-input">
+                                    <label for="css-q2o2" class="mcq-option"><b>font-weight: bold</b></label>
+                                    <br>
+                                    <input type="radio" name="css-q2" id="css-q2o3" value="opt3" class="mcq-option-input">
+                                    <label for="css-q2o3" class="mcq-option"><b>font-style: bold</b></label>
+                                    <br>
+                                    <input type="radio" name="css-q2" id="css-q2o4" value="opt4" class="mcq-option-input">
+                                    <label for="css-q2o4" class="mcq-option"><b>text-align: bold</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption2-css"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(2,2)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(2,2)>Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                            <div id="css-q3">
+                                <hr>
+                                <br>
+                                <b><p>Which of the following is the correct way to apply CSS Styles?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="css-q3" id="css-q3o1" value="opt1" class="mcq-option-input">
+                                    <label for="css-q3o1" class="mcq-option"><b> in an external CSS file</b></label>
+                                    <br>
+                                    <input type="radio" name="css-q3" id="css-q3o2" value="opt2" class="mcq-option-input">
+                                    <label for="css-q3o2" class="mcq-option"><b>inside an HTML element</b></label>
+                                    <br>
+                                    <input type="radio" name="css-q3" id="css-q3o3" value="opt3" class="mcq-option-input">
+                                    <label for="css-q3o3" class="mcq-option"><b>inside the head section of an HTML page</b></label>
+                                    <br>
+                                    <input type="radio" name="css-q3" id="css-q3o4" value="opt4" class="mcq-option-input">
+                                    <label for="css-q3o4" class="mcq-option"><b>all of the mentioned</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption3-css"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(2,3)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(2,3)>Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                            <div id="css-q4">
+                                <hr>
+                                <br>
+                                <b><p>Which of the following CSS property sets the shadow for a box element?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="css-q4" id="css-q4o1" value="opt1" class="mcq-option-input">
+                                    <label for="css-q4o1" class="mcq-option"><b>text-shadow</b></label>
+                                    <br>
+                                    <input type="radio" name="css-q4" id="css-q4o2" value="opt2" class="mcq-option-input">
+                                    <label for="css-q4o2" class="mcq-option"><b>set-shadow</b></label>
+                                    <br>
+                                    <input type="radio" name="css-q4" id="css-q4o3" value="opt3" class="mcq-option-input">
+                                    <label for="css-q4o3" class="mcq-option"><b>box-shadow</b></label>
+                                    <br>
+                                    <input type="radio" name="css-q4" id="css-q4o4" value="opt4" class="mcq-option-input">
+                                    <label for="css-q4o4" class="mcq-option"><b>shadow-box</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption4-css"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(2,4)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(2,4)>Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                            <div id="css-q5">
+                                <hr>
+                                <br>
+                                <b><p>Which of the following CSS Property controls how an element is positioned?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="css-q5" id="css-q5o1" value="opt1" class="mcq-option-input">
+                                    <label for="css-q5o1"css- class="mcq-option"><b>static</b></label>
+                                    <br>
+                                    <input type="radio" name="css-q5" id="css-q5o2" value="opt2" class="mcq-option-input">
+                                    <label for="css-q5o2" class="mcq-option"><b>set-position</b></label>
+                                    <br>
+                                    <input type="radio" name="css-q5" id="css-q5o3" value="opt3" class="mcq-option-input">
+                                    <label for="css-q5o3" class="mcq-option"><b>fixed</b></label>
+                                    <br>
+                                    <input type="radio" name="css-q5" id="css-q5o4" value="opt4" class="mcq-option-input">
+                                    <label for="css-q5o4" class="mcq-option"><b>position</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption5-css"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(2,5)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(2,5) id="lastcssquestionbtn">Next</button>
+                                            <button class="btn btn-danger np-button" onclick=endTest(2) id="endcsstestbtn">Submit</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="test-bgcolor" id="end-test-css">
+                    <div class="test-background d-flex justify-content-center align-items-center">
+                        <div class="scoreboard-container">
+                            <div class="d-flex">
+                                <div class="scoreboard-section d-flex flex-column">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1672554298/OIP_12_ath2qq.jpg" alt="image" class="scoreboard-image">
+                                    </div>
+                                    <p class="scoreboard-username" id="showusername-css"></p>
+                                    <br><br>
+                                    <p class="scoreboard-status" id="showuserstatus-css"></p>
+                                    <br>
+                                    <div class="center-element">
+                                        <button class="btn btn-outline-danger scoreboard-button" onclick=goToHome(2)>Home</button>
+                                        <button class="btn btn-outline-danger scoreboard-button" onclick=goToHome(2)>Next Test</button>
+                                    </div>
+                                </div>
+                                <div class="scoreboard-section d-flex flex-column">
+                                    <div class="scoreboard-section-box">
+                                        <h4 class="question-info">Total</h4>
+                                        <p class="answer-info">5</p>
+                                    </div>
+                                    <div class="scoreboard-section-box">
+                                        <h4 class="question-info">Correct</h4>
+                                        <p class="answer-info" id="correct-css"></p>
+                                    </div>
+                                    <div class="scoreboard-section-box">
+                                        <h4 class="question-info">Incorrect</h4>
+                                        <p class="answer-info" id="incorrect-css"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div id="javascript-test">
+                <div class="test-bgcolor" id="rulesoftest-javascript">
+                    <div class="test-background d-flex justify-content-center align-items-center">
+                        <div class="test-rules">
+                            <h2 class="center-element">Rules</h2>
+                            <ul>
+                                <li>You have 5 questions.</li>
+                                <li>You need to attempt all questions.</li>
+                                <li>You have to select one option out of four.</li>
+                                <li>Once you clicked on any option,your score will be updated according to that option.</li>
+                                <li>You can see previous question,but score will not change.</li>
+                                <li>Your test status will show when you click on Submit button.</li>
+                            </ul>
+                            <div class="center-element"><button class="btn btn-primary" onclick= displayTest(3)>START</button></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="test-bgcolor" id="javascript-test-mcq">
+                    <div class="test-background d-flex justify-content-center align-items-center">
+                        <div class="mcq-test-container">
+            
+                            <div class="d-flex justify-content-center align-items-center">
+                                <progress value="0" max="5" class="progress-bar" id="prog-javascript"></progress>
+                                <p class="question-no" id="mcq-question-no-javascript">1/5</p>
+                            </div>
+                            
+                            <div id="javascript-q1">
+                                <hr>
+                                <br>
+                                <b><p>Which of the following is correct about JavaScript?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="javascript-q1" id="javascript-q1o1" value="opt1" class="mcq-option-input">
+                                    <label for="javascript-q1o1" class="mcq-option"><b>It is an Object-Based language</b></label>
+                                    <br>
+                                    <input type="radio" name="javascript-q1" id="javascript-q1o2" value="opt2" class="mcq-option-input">
+                                    <label for="javascript-q1o2" class="mcq-option"><b>It is Assembly-language</b></label>
+                                    <br>
+                                    <input type="radio" name="javascript-q1" id="javascript-q1o3" value="opt3" class="mcq-option-input">
+                                    <label for="javascript-q1o3" class="mcq-option"><b>It is an Object-Oriented language</b></label>
+                                    <br>
+                                    <input type="radio" name="javascript-q1" id="javascript-q1o4" value="opt4" class="mcq-option-input">
+                                    <label for="javascript-q1o4" class="mcq-option"><b>It is a High-level language</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption1-javascript"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(3,1)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(3,1) >Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                            <div id="javascript-q2">
+                                <hr>
+                                <br>
+                                <b><p>Arrays in JavaScript are defined by which of the following statements?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="javascript-q2" id="javascript-q2o1" value="opt1" class="mcq-option-input">
+                                    <label for="javascript-q2o1" class="mcq-option"><b>It is an ordered list of values</b></label>
+                                    <br>
+                                    <input type="radio" name="javascript-q2" id="javascript-q2o2" value="opt2" class="mcq-option-input">
+                                    <label for="javascript-q2o2" class="mcq-option"><b>It is an ordered list of objects</b></label>
+                                    <br>
+                                    <input type="radio" name="javascript-q2" id="javascript-q2o3" value="opt3" class="mcq-option-input">
+                                    <label for="javascript-q2o3" class="mcq-option"><b>It is an ordered list of string</b></label>
+                                    <br>
+                                    <input type="radio" name="javascript-q2" id="javascript-q2o4" value="opt4" class="mcq-option-input">
+                                    <label for="javascript-q2o4" class="mcq-option"><b>It is an ordered list of functions</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption2-javascript"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(3,2)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(3,2)>Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                            <div id="javascript-q3">
+                                <hr>
+                                <br>
+                                <b><p>Which of the following is not javascript data types?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="javascript-q3" id="javascript-q3o1" value="opt1" class="mcq-option-input">
+                                    <label for="javascript-q3o1" class="mcq-option"><b>Boolean</b></label>
+                                    <br>
+                                    <input type="radio" name="javascript-q3" id="javascript-q3o2" value="opt2" class="mcq-option-input">
+                                    <label for="javascript-q3o2" class="mcq-option"><b>Undefined</b></label>
+                                    <br>
+                                    <input type="radio" name="javascript-q3" id="javascript-q3o3" value="opt3" class="mcq-option-input">
+                                    <label for="javascript-q3o3" class="mcq-option"><b>Number</b></label>
+                                    <br>
+                                    <input type="radio" name="javascript-q3" id="javascript-q3o4" value="opt4" class="mcq-option-input">
+                                    <label for="javascript-q3o4" class="mcq-option"><b> float</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption3-javascript"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(3,3)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(3,3)>Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                            <div id="javascript-q4">
+                                <hr>
+                                <br>
+                                <b><p> Which of the following is not an error in JavaScript?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="javascript-q4" id="javascript-q4o1" value="opt1" class="mcq-option-input">
+                                    <label for="javascript-q4o1" class="mcq-option"><b>Missing of Bracket</b></label>
+                                    <br>
+                                    <input type="radio" name="javascript-q4" id="javascript-q4o2" value="opt2" class="mcq-option-input">
+                                    <label for="javascript-q4o2" class="mcq-option"><b>Division by zero</b></label>
+                                    <br>
+                                    <input type="radio" name="javascript-q4" id="javascript-q4o3" value="opt3" class="mcq-option-input">
+                                    <label for="javascript-q4o3" class="mcq-option"><b>Syntax error</b></label>
+                                    <br>
+                                    <input type="radio" name="javascript-q4" id="javascript-q4o4" value="opt4" class="mcq-option-input">
+                                    <label for="javascript-q4o4" class="mcq-option"><b>Missing of semicolons</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption4-javascript"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(3,4)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(3,4)>Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                            <div id="javascript-q5">
+                                <hr>
+                                <br>
+                                <b><p> In JavaScript, what do we use for calling the expression for function definition?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="javascript-q5" id="javascript-q5o1" value="opt1" class="mcq-option-input">
+                                    <label for="javascript-q5o1"javascript- class="mcq-option"><b>Function literal</b></label>
+                                    <br>
+                                    <input type="radio" name="javascript-q5" id="javascript-q5o2" value="opt2" class="mcq-option-input">
+                                    <label for="javascript-q5o2" class="mcq-option"><b>Function prototype</b></label>
+                                    <br>
+                                    <input type="radio" name="javascript-q5" id="javascript-q5o3" value="opt3" class="mcq-option-input">
+                                    <label for="javascript-q5o3" class="mcq-option"><b>Function declaration</b></label>
+                                    <br>
+                                    <input type="radio" name="javascript-q5" id="javascript-q5o4" value="opt4" class="mcq-option-input">
+                                    <label for="javascript-q5o4" class="mcq-option"><b>Function calling</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption5-javascript"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(3,5)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(3,5) id="lastjavascriptquestionbtn">Next</button>
+                                            <button class="btn btn-danger np-button" onclick=endTest(3) id="endjavascripttestbtn">Submit</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-bgcolor" id="end-test-javascript">
+                    <div class="test-background d-flex justify-content-center align-items-center">
+                        <div class="scoreboard-container">
+                            <div class="d-flex">
+                                <div class="scoreboard-section d-flex flex-column">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1672554298/OIP_12_ath2qq.jpg" alt="image" class="scoreboard-image">
+                                    </div>
+                                    <p class="scoreboard-username" id="showusername-javascript"></p>
+                                    <br><br>
+                                    <p class="scoreboard-status" id="showuserstatus-javascript"></p>
+                                    <br>
+                                    <div class="center-element">
+                                        <button class="btn btn-outline-danger scoreboard-button" onclick=goToHome(3)>Home</button>
+                                        <button class="btn btn-outline-danger scoreboard-button" onclick=goToHome(3)>Next Test</button>
+                                    </div>
+                                </div>
+                                <div class="scoreboard-section d-flex flex-column">
+                                    <div class="scoreboard-section-box">
+                                        <h4 class="question-info">Total</h4>
+                                        <p class="answer-info">5</p>
+                                    </div>
+                                    <div class="scoreboard-section-box">
+                                        <h4 class="question-info">Correct</h4>
+                                        <p class="answer-info" id="correct-javascript"></p>
+                                    </div>
+                                    <div class="scoreboard-section-box">
+                                        <h4 class="question-info">Incorrect</h4>
+                                        <p class="answer-info" id="incorrect-javascript"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div id="clanguage-test">
+                <div class="test-bgcolor" id="rulesoftest-clanguage">
+                    <div class="test-background d-flex justify-content-center align-items-center">
+                        <div class="test-rules">
+                            <h2 class="center-element">Rules</h2>
+                            <ul>
+                                <li>You have 5 questions.</li>
+                                <li>You need to attempt all questions.</li>
+                                <li>You have to select one option out of four.</li>
+                                <li>Once you clicked on any option,your score will be updated according to that option.</li>
+                                <li>You can see previous question,but score will not change.</li>
+                                <li>Your test status will show when you click on Submit button.</li>
+                            </ul>
+                            <div class="center-element"><button class="btn btn-primary" onclick= displayTest(4)>START</button></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="test-bgcolor" id="clanguage-test-mcq">
+                    <div class="test-background d-flex justify-content-center align-items-center">
+                        <div class="mcq-test-container">
+            
+                            <div class="d-flex justify-content-center align-items-center">
+                                <progress value="0" max="5" class="progress-bar" id="prog-clanguage"></progress>
+                                <p class="question-no" id="mcq-question-no-clanguage">1/5</p>
+                            </div>
+                            
+                            <div id="clanguage-q1">
+                                <hr>
+                                <br>
+                                <b><p>What is the 16-bit compiler allowable range for integer constants?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="clanguage-q1" id="clanguage-q1o1" value="opt1" class="mcq-option-input">
+                                    <label for="clanguage-q1o1" class="mcq-option"><b>-3.4e38 to 3.4e38</b></label>
+                                    <br>
+                                    <input type="radio" name="clanguage-q1" id="clanguage-q1o2" value="opt2" class="mcq-option-input">
+                                    <label for="clanguage-q1o2" class="mcq-option"><b>-32767 to 32768</b></label>
+                                    <br>
+                                    <input type="radio" name="clanguage-q1" id="clanguage-q1o3" value="opt3" class="mcq-option-input">
+                                    <label for="clanguage-q1o3" class="mcq-option"><b>-32668 to 32667</b></label>
+                                    <br>
+                                    <input type="radio" name="clanguage-q1" id="clanguage-q1o4" value="opt4" class="mcq-option-input">
+                                    <label for="clanguage-q1o4" class="mcq-option"><b>-32768 to 32767</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption1-clanguage"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(4,1)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(4,1) >Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                            <div id="clanguage-q2">
+                                <hr>
+                                <br>
+                                <b><p>What is the output of this statement "printf("%d", (a++))"?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="clanguage-q2" id="clanguage-q2o1" value="opt1" class="mcq-option-input">
+                                    <label for="clanguage-q2o1" class="mcq-option"><b>The value of (a + 1)</b></label>
+                                    <br>
+                                    <input type="radio" name="clanguage-q2" id="clanguage-q2o2" value="opt2" class="mcq-option-input">
+                                    <label for="clanguage-q2o2" class="mcq-option"><b>The current value of a</b></label>
+                                    <br>
+                                    <input type="radio" name="clanguage-q2" id="clanguage-q2o3" value="opt3" class="mcq-option-input">
+                                    <label for="clanguage-q2o3" class="mcq-option"><b>Error message</b></label>
+                                    <br>
+                                    <input type="radio" name="clanguage-q2" id="clanguage-q2o4" value="opt4" class="mcq-option-input">
+                                    <label for="clanguage-q2o4" class="mcq-option"><b>Garbage</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption2-clanguage"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(4,2)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(4,2)>Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                            <div id="clanguage-q3">
+                                <hr>
+                                <br>
+                                <b><p>Which of these is NOT a relational or logical operator?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="clanguage-q3" id="clanguage-q3o1" value="opt1" class="mcq-option-input">
+                                    <label for="clanguage-q3o1" class="mcq-option"><b>==</b></label>
+                                    <br>
+                                    <input type="radio" name="clanguage-q3" id="clanguage-q3o2" value="opt2" class="mcq-option-input">
+                                    <label for="clanguage-q3o2" class="mcq-option"><b>!=</b></label>
+                                    <br>
+                                    <input type="radio" name="clanguage-q3" id="clanguage-q3o3" value="opt3" class="mcq-option-input">
+                                    <label for="clanguage-q3o3" class="mcq-option"><b>&&</b></label>
+                                    <br>
+                                    <input type="radio" name="clanguage-q3" id="clanguage-q3o4" value="opt4" class="mcq-option-input">
+                                    <label for="clanguage-q3o4" class="mcq-option"><b>=</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption3-clanguage"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(4,3)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(4,3)>Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                            <div id="clanguage-q4">
+                                <hr>
+                                <br>
+                                <b><p>Which one of the following is a loop construct that will always be executed once?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="clanguage-q4" id="clanguage-q4o1" value="opt1" class="mcq-option-input">
+                                    <label for="clanguage-q4o1" class="mcq-option"><b>for</b></label>
+                                    <br>
+                                    <input type="radio" name="clanguage-q4" id="clanguage-q4o2" value="opt2" class="mcq-option-input">
+                                    <label for="clanguage-q4o2" class="mcq-option"><b>for each</b></label>
+                                    <br>
+                                    <input type="radio" name="clanguage-q4" id="clanguage-q4o3" value="opt3" class="mcq-option-input">
+                                    <label for="clanguage-q4o3" class="mcq-option"><b>do while</b></label>
+                                    <br>
+                                    <input type="radio" name="clanguage-q4" id="clanguage-q4o4" value="opt4" class="mcq-option-input">
+                                    <label for="clanguage-q4o4" class="mcq-option"><b>while</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption4-clanguage"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(4,4)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(4,4)>Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                            <div id="clanguage-q5">
+                                <hr>
+                                <br>
+                                <b><p>Which is valid expression in c language?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="clanguage-q5" id="clanguage-q5o1" value="opt1" class="mcq-option-input">
+                                    <label for="clanguage-q5o1"clanguage- class="mcq-option"><b>int my_num = 100,000;</b></label>
+                                    <br>
+                                    <input type="radio" name="clanguage-q5" id="clanguage-q5o2" value="opt2" class="mcq-option-input">
+                                    <label for="clanguage-q5o2" class="mcq-option"><b>int my_num = 100000;</b></label>
+                                    <br>
+                                    <input type="radio" name="clanguage-q5" id="clanguage-q5o3" value="opt3" class="mcq-option-input">
+                                    <label for="clanguage-q5o3" class="mcq-option"><b>int my num = 1000;</b></label>
+                                    <br>
+                                    <input type="radio" name="clanguage-q5" id="clanguage-q5o4" value="opt4" class="mcq-option-input">
+                                    <label for="clanguage-q5o4" class="mcq-option"><b>int my num == 10000;</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption5-clanguage"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(4,5)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(4,5) id="lastclanguagequestionbtn">Next</button>
+                                            <button class="btn btn-danger np-button" onclick=endTest(4) id="endclanguagetestbtn">Submit</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-bgcolor" id="end-test-clanguage">
+                    <div class="test-background d-flex justify-content-center align-items-center">
+                        <div class="scoreboard-container">
+                            <div class="d-flex">
+                                <div class="scoreboard-section d-flex flex-column">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1672554298/OIP_12_ath2qq.jpg" alt="image" class="scoreboard-image">
+                                    </div>
+                                    <p class="scoreboard-username" id="showusername-clanguage"></p>
+                                    <br><br>
+                                    <p class="scoreboard-status" id="showuserstatus-clanguage"></p>
+                                    <br>
+                                    <div class="center-element">
+                                        <button class="btn btn-outline-danger scoreboard-button" onclick=goToHome(4)>Home</button>
+                                        <button class="btn btn-outline-danger scoreboard-button" onclick=goToHome(4)>Next Test</button>
+                                    </div>
+                                </div>
+                                <div class="scoreboard-section d-flex flex-column">
+                                    <div class="scoreboard-section-box">
+                                        <h4 class="question-info">Total</h4>
+                                        <p class="answer-info">5</p>
+                                    </div>
+                                    <div class="scoreboard-section-box">
+                                        <h4 class="question-info">Correct</h4>
+                                        <p class="answer-info" id="correct-clanguage"></p>
+                                    </div>
+                                    <div class="scoreboard-section-box">
+                                        <h4 class="question-info">Incorrect</h4>
+                                        <p class="answer-info" id="incorrect-clanguage"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div id="python-test">
+                <div class="test-bgcolor" id="rulesoftest-python">
+                    <div class="test-background d-flex justify-content-center align-items-center">
+                        <div class="test-rules">
+                            <h2 class="center-element">Rules</h2>
+                            <ul>
+                                <li>You have 5 questions.</li>
+                                <li>You need to attempt all questions.</li>
+                                <li>You have to select one option out of four.</li>
+                                <li>Once you clicked on any option,your score will be updated according to that option.</li>
+                                <li>You can see previous question,but score will not change.</li>
+                                <li>Your test status will show when you click on Submit button.</li>
+                            </ul>
+                            <div class="center-element"><button class="btn btn-primary" onclick= displayTest(5)>START</button></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="test-bgcolor" id="python-test-mcq">
+                    <div class="test-background d-flex justify-content-center align-items-center">
+                        <div class="mcq-test-container">
+            
+                            <div class="d-flex justify-content-center align-items-center">
+                                <progress value="0" max="5" class="progress-bar" id="prog-python"></progress>
+                                <p class="question-no" id="mcq-question-no-python">1/5</p>
+                            </div>
+                            
+                            <div id="python-q1">
+                                <hr>
+                                <br>
+                                <b><p>What is the maximum possible length of an identifier?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="python-q1" id="python-q1o1" value="opt1" class="mcq-option-input">
+                                    <label for="python-q1o1" class="mcq-option"><b>31</b></label>
+                                    <br>
+                                    <input type="radio" name="python-q1" id="python-q1o2" value="opt2" class="mcq-option-input">
+                                    <label for="python-q1o2" class="mcq-option"><b>63</b></label>
+                                    <br>
+                                    <input type="radio" name="python-q1" id="python-q1o3" value="opt3" class="mcq-option-input">
+                                    <label for="python-q1o3" class="mcq-option"><b>79</b></label>
+                                    <br>
+                                    <input type="radio" name="python-q1" id="python-q1o4" value="opt4" class="mcq-option-input">
+                                    <label for="python-q1o4" class="mcq-option"><b>None of these</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption1-python"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(5,1)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(5,1) >Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                            <div id="python-q2">
+                                <hr>
+                                <br>
+                                <b><p>Who developed the Python language?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="python-q2" id="python-q2o1" value="opt1" class="mcq-option-input">
+                                    <label for="python-q2o1" class="mcq-option"><b>Zim Den</b></label>
+                                    <br>
+                                    <input type="radio" name="python-q2" id="python-q2o2" value="opt2" class="mcq-option-input">
+                                    <label for="python-q2o2" class="mcq-option"><b>Guido van Rossum</b></label>
+                                    <br>
+                                    <input type="radio" name="python-q2" id="python-q2o3" value="opt3" class="mcq-option-input">
+                                    <label for="python-q2o3" class="mcq-option"><b>Niene Stom</b></label>
+                                    <br>
+                                    <input type="radio" name="python-q2" id="python-q2o4" value="opt4" class="mcq-option-input">
+                                    <label for="python-q2o4" class="mcq-option"><b>Wick van Rossum</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption2-python"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(5,2)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(5,2)>Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                            <div id="python-q3">
+                                <hr>
+                                <br>
+                                <b><p>What is the method inside the class in python language?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="python-q3" id="python-q3o1" value="opt1" class="mcq-option-input">
+                                    <label for="python-q3o1" class="mcq-option"><b>Object</b></label>
+                                    <br>
+                                    <input type="radio" name="python-q3" id="python-q3o2" value="opt2" class="mcq-option-input">
+                                    <label for="python-q3o2" class="mcq-option"><b>Function</b></label>
+                                    <br>
+                                    <input type="radio" name="python-q3" id="python-q3o3" value="opt3" class="mcq-option-input">
+                                    <label for="python-q3o3" class="mcq-option"><b>Attribute</b></label>
+                                    <br>
+                                    <input type="radio" name="python-q3" id="python-q3o4" value="opt4" class="mcq-option-input">
+                                    <label for="python-q3o4" class="mcq-option"><b>Argument</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption3-python"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(5,3)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(5,3)>Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                            <div id="python-q4">
+                                <hr>
+                                <br>
+                                <b><p>Which of the following is not a keyword in Python language?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="python-q4" id="python-q4o1" value="opt1" class="mcq-option-input">
+                                    <label for="python-q4o1" class="mcq-option"><b>val</b></label>
+                                    <br>
+                                    <input type="radio" name="python-q4" id="python-q4o2" value="opt2" class="mcq-option-input">
+                                    <label for="python-q4o2" class="mcq-option"><b>raise</b></label>
+                                    <br>
+                                    <input type="radio" name="python-q4" id="python-q4o3" value="opt3" class="mcq-option-input">
+                                    <label for="python-q4o3" class="mcq-option"><b>try</b></label>
+                                    <br>
+                                    <input type="radio" name="python-q4" id="python-q4o4" value="opt4" class="mcq-option-input">
+                                    <label for="python-q4o4" class="mcq-option"><b>with</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption4-python"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(5,4)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(5,4)>Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                            <div id="python-q5">
+                                <hr>
+                                <br>
+                                <b><p>Which of the following would give an error?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="python-q5" id="python-q5o1" value="opt1" class="mcq-option-input">
+                                    <label for="python-q5o1"python- class="mcq-option"><b>None of the above</b></label>
+                                    <br>
+                                    <input type="radio" name="python-q5" id="python-q5o2" value="opt2" class="mcq-option-input">
+                                    <label for="python-q5o2" class="mcq-option"><b>list1=[]</b></label>
+                                    <br>
+                                    <input type="radio" name="python-q5" id="python-q5o3" value="opt3" class="mcq-option-input">
+                                    <label for="python-q5o3" class="mcq-option"><b>list1=[]*3</b></label>
+                                    <br>
+                                    <input type="radio" name="python-q5" id="python-q5o4" value="opt4" class="mcq-option-input">
+                                    <label for="python-q5o4" class="mcq-option"><b>list1=[2,8,7]</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption5-python"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(5,5)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(5,5) id="lastpythonquestionbtn">Next</button>
+                                            <button class="btn btn-danger np-button" onclick=endTest(5) id="endpythontestbtn">Submit</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-bgcolor" id="end-test-python">
+                    <div class="test-background d-flex justify-content-center align-items-center">
+                        <div class="scoreboard-container">
+                            <div class="d-flex">
+                                <div class="scoreboard-section d-flex flex-column">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1672554298/OIP_12_ath2qq.jpg" alt="image" class="scoreboard-image">
+                                    </div>
+                                    <p class="scoreboard-username" id="showusername-python"></p>
+                                    <br><br>
+                                    <p class="scoreboard-status" id="showuserstatus-python"></p>
+                                    <br>
+                                    <div class="center-element">
+                                        <button class="btn btn-outline-danger scoreboard-button" onclick=goToHome(5)>Home</button>
+                                        <button class="btn btn-outline-danger scoreboard-button" onclick=goToHome(5)>Next Test</button>
+                                    </div>
+                                </div>
+                                <div class="scoreboard-section d-flex flex-column">
+                                    <div class="scoreboard-section-box">
+                                        <h4 class="question-info">Total</h4>
+                                        <p class="answer-info">5</p>
+                                    </div>
+                                    <div class="scoreboard-section-box">
+                                        <h4 class="question-info">Correct</h4>
+                                        <p class="answer-info" id="correct-python"></p>
+                                    </div>
+                                    <div class="scoreboard-section-box">
+                                        <h4 class="question-info">Incorrect</h4>
+                                        <p class="answer-info" id="incorrect-python"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div id="corejava-test">
+                <div class="test-bgcolor" id="rulesoftest-corejava">
+                    <div class="test-background d-flex justify-content-center align-items-center">
+                        <div class="test-rules">
+                            <h2 class="center-element">Rules</h2>
+                            <ul>
+                                <li>You have 5 questions.</li>
+                                <li>You need to attempt all questions.</li>
+                                <li>You have to select one option out of four.</li>
+                                <li>Once you clicked on any option,your score will be updated according to that option.</li>
+                                <li>You can see previous question,but score will not change.</li>
+                                <li>Your test status will show when you click on Submit button.</li>
+                            </ul>
+                            <div class="center-element"><button class="btn btn-primary" onclick= displayTest(6)>START</button></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="test-bgcolor" id="corejava-test-mcq">
+                    <div class="test-background d-flex justify-content-center align-items-center">
+                        <div class="mcq-test-container">
+            
+                            <div class="d-flex justify-content-center align-items-center">
+                                <progress value="0" max="5" class="progress-bar" id="prog-corejava"></progress>
+                                <p class="question-no" id="mcq-question-no-corejava">1/5</p>
+                            </div>
+                            
+                            <div id="corejava-q1">
+                                <hr>
+                                <br>
+                                <b><p>Which component is used to compile, debug and execute the java programs?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="corejava-q1" id="corejava-q1o1" value="opt1" class="mcq-option-input">
+                                    <label for="corejava-q1o1" class="mcq-option"><b>JDK</b></label>
+                                    <br>
+                                    <input type="radio" name="corejava-q1" id="corejava-q1o2" value="opt2" class="mcq-option-input">
+                                    <label for="corejava-q1o2" class="mcq-option"><b>JIT</b></label>
+                                    <br>
+                                    <input type="radio" name="corejava-q1" id="corejava-q1o3" value="opt3" class="mcq-option-input">
+                                    <label for="corejava-q1o3" class="mcq-option"><b>JRE</b></label>
+                                    <br>
+                                    <input type="radio" name="corejava-q1" id="corejava-q1o4" value="opt4" class="mcq-option-input">
+                                    <label for="corejava-q1o4" class="mcq-option"><b>JVM</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption1-corejava"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(6,1)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(6,1) >Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                            <div id="corejava-q2">
+                                <hr>
+                                <br>
+                                <b><p>Which of the following is not a Java features?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="corejava-q2" id="corejava-q2o1" value="opt1" class="mcq-option-input">
+                                    <label for="corejava-q2o1" class="mcq-option"><b>Use of pointers</b></label>
+                                    <br>
+                                    <input type="radio" name="corejava-q2" id="corejava-q2o2" value="opt2" class="mcq-option-input">
+                                    <label for="corejava-q2o2" class="mcq-option"><b>Architecture Neutral</b></label>
+                                    <br>
+                                    <input type="radio" name="corejava-q2" id="corejava-q2o3" value="opt3" class="mcq-option-input">
+                                    <label for="corejava-q2o3" class="mcq-option"><b>Object-oriented</b></label>
+                                    <br>
+                                    <input type="radio" name="corejava-q2" id="corejava-q2o4" value="opt4" class="mcq-option-input">
+                                    <label for="corejava-q2o4" class="mcq-option"><b>Dynamic</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption2-corejava"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(6,2)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(6,2)>Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                            <div id="corejava-q3">
+                                <hr>
+                                <br>
+                                <b><p>Which of the following is a type of polymorphism in Java Programming?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="corejava-q3" id="corejava-q3o1" value="opt1" class="mcq-option-input">
+                                    <label for="corejava-q3o1" class="mcq-option"><b>Multiple polymorphism</b></label>
+                                    <br>
+                                    <input type="radio" name="corejava-q3" id="corejava-q3o2" value="opt2" class="mcq-option-input">
+                                    <label for="corejava-q3o2" class="mcq-option"><b>Compile time polymorphism</b></label>
+                                    <br>
+                                    <input type="radio" name="corejava-q3" id="corejava-q3o3" value="opt3" class="mcq-option-input">
+                                    <label for="corejava-q3o3" class="mcq-option"><b>Multilevel polymorphism</b></label>
+                                    <br>
+                                    <input type="radio" name="corejava-q3" id="corejava-q3o4" value="opt4" class="mcq-option-input">
+                                    <label for="corejava-q3o4" class="mcq-option"><b>Execution time polymorphism</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption3-corejava"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(6,3)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(6,3)>Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                            <div id="corejava-q4">
+                                <hr>
+                                <br>
+                                <b><p>Which exception is thrown when java is out of memory?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="corejava-q4" id="corejava-q4o1" value="opt1" class="mcq-option-input">
+                                    <label for="corejava-q4o1" class="mcq-option"><b>MemoryError</b></label>
+                                    <br>
+                                    <input type="radio" name="corejava-q4" id="corejava-q4o2" value="opt2" class="mcq-option-input">
+                                    <label for="corejava-q4o2" class="mcq-option"><b>OutOfMemoryError</b></label>
+                                    <br>
+                                    <input type="radio" name="corejava-q4" id="corejava-q4o3" value="opt3" class="mcq-option-input">
+                                    <label for="corejava-q4o3" class="mcq-option"><b>MemoryOutOfBoundsException</b></label>
+                                    <br>
+                                    <input type="radio" name="corejava-q4" id="corejava-q4o4" value="opt4" class="mcq-option-input">
+                                    <label for="corejava-q4o4" class="mcq-option"><b>MemoryFullException</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption4-corejava"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(6,4)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(6,4)>Next</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                            <div id="corejava-q5">
+                                <hr>
+                                <br>
+                                <b><p>Which of these keywords is used to define interfaces in Java?</p></b>
+                                <hr>
+                                <div>
+                                    <input type="radio" name="corejava-q5" id="corejava-q5o1" value="opt1" class="mcq-option-input">
+                                    <label for="corejava-q5o1"corejava- class="mcq-option"><b>intf</b></label>
+                                    <br>
+                                    <input type="radio" name="corejava-q5" id="corejava-q5o2" value="opt2" class="mcq-option-input">
+                                    <label for="corejava-q5o2" class="mcq-option"><b>Intf</b></label>
+                                    <br>
+                                    <input type="radio" name="corejava-q5" id="corejava-q5o3" value="opt3" class="mcq-option-input">
+                                    <label for="corejava-q5o3" class="mcq-option"><b>interface</b></label>
+                                    <br>
+                                    <input type="radio" name="corejava-q5" id="corejava-q5o4" value="opt4" class="mcq-option-input">
+                                    <label for="corejava-q5o4" class="mcq-option"><b>Interface</b></label>
+                                    <p class="select-radio-button-mssg" id="selectoption5-corejava"></p>
+                                    <div class="center-element np-button-container d-flex flex-column justify-content-end">
+                                        <div class="d-flex justify-content-between">
+                                            <button class="btn btn-primary np-button" onclick=showPreviousQuestion(6,5)>Previous</button>
+                                            <button class="btn btn-primary np-button" onclick=showNextQuestion(6,5) id="lastcorejavaquestionbtn">Next</button>
+                                            <button class="btn btn-danger np-button" onclick=endTest(6) id="endcorejavatestbtn">Submit</button>
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-bgcolor" id="end-test-corejava">
+                    <div class="test-background d-flex justify-content-center align-items-center">
+                        <div class="scoreboard-container">
+                            <div class="d-flex">
+                                <div class="scoreboard-section d-flex flex-column">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1672554298/OIP_12_ath2qq.jpg" alt="image" class="scoreboard-image">
+                                    </div>
+                                    <p class="scoreboard-username" id="showusername-corejava"></p>
+                                    <br><br>
+                                    <p class="scoreboard-status" id="showuserstatus-corejava"></p>
+                                    <br>
+                                    <div class="center-element">
+                                        <button class="btn btn-outline-danger scoreboard-button" onclick=goToHome(6)>Home</button>
+                                        <button class="btn btn-outline-danger scoreboard-button" onclick=goToHome(6)>Next Test</button>
+                                    </div>
+                                </div>
+                                <div class="scoreboard-section d-flex flex-column">
+                                    <div class="scoreboard-section-box">
+                                        <h4 class="question-info">Total</h4>
+                                        <p class="answer-info">5</p>
+                                    </div>
+                                    <div class="scoreboard-section-box">
+                                        <h4 class="question-info">Correct</h4>
+                                        <p class="answer-info" id="correct-corejava"></p>
+                                    </div>
+                                    <div class="scoreboard-section-box">
+                                        <h4 class="question-info">Incorrect</h4>
+                                        <p class="answer-info" id="incorrect-corejava"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+        </div>
+
+        <script src="QuizTest_online.js"></script>
+    </body>
+</html>
