@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Profile Card</title>
+
+        <style>
+
+            .main-container{
+                background-image: linear-gradient(to bottom right,white,whitesmoke,rgb(236, 176, 154));
+                height: 100vh;
+                width: 100vw;
+            }
+
+            .profile-card{
+                border: 1px solid red;
+                position: relative;
+                border-radius: 3px;
+            }
+
+            .card-img{
+                height: 300px;
+                width: 320px;
+            }
+
+            .card-content{
+                text-align: center;
+                background-color: aliceblue;
+                padding: 15px;
+            }
+
+            h2{
+                font-family: monospace;
+            }
+
+            p{
+                color: grey;
+            }
+
+            button{
+                height: 35px;
+                width: 120px;
+                border-width: 0px;
+                border-radius: 2px;
+                background-color: rgb(255, 118, 68);
+                color: white;
+                transition: background-color 0.3s;
+            }
+
+            button:hover{
+                background-color: red;
+            }
+
+            .bg-card{
+                position: absolute;
+                top: 0px;
+                left: 100.2%;
+                background-color: wheat;
+                width: 0px;
+                overflow: hidden;
+                transition: width 1s;
+            }
+
+            .box{
+                transition: background-color 0.3s;
+            }
+
+            .box:hover{
+                background-color: rgb(248, 206, 127);
+            }
+
+            .profile-card:hover .bg-card{
+                width: 60px;
+
+            }       
+        
+        </style>
+
+    </head>
+    <body>
+        
+        <div class="main-container d-flex justify-content-center align-items-center">
+            <div class="profile-card">
+                <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1675428500/R_k8ucb6.jpg" alt="" class="card-img">
+                <div class="card-content">
+                    <h2>Justin Bieber</h2>
+                    <p>Canadian Singer</p>
+                    <button>Contact Now</button>
+                </div>
+                <div class="bg-card d-flex justify-content-end">
+                    <div class="d-flex flex-column">
+                        <div class="box">
+                        <a href="#" class="fa fa-facebook" style="font-size: 30px;margin: 15px;color: red;text-decoration: none;"></a>
+                        </div>
+                        <div class="box">
+                        <a href="#" class="fa fa-twitter" style="font-size: 30px;margin: 15px;color: red;text-decoration: none;"></a>
+                        </div>
+                        <div class="box">
+                        <a href="#" class="fa fa-instagram" style="font-size: 30px;margin: 15px;color: red;text-decoration: none;"></a>
+                        </div>
+                        <div class="box">
+                        <a href="#" class="fa fa-snapchat" style="font-size: 30px;margin: 15px;color: red;text-decoration: none;"></a>
+                        </div>
+                        <div class="box">
+                        <a href="#" class="fa fa-youtube" style="font-size: 30px;margin: 15px;color: red;text-decoration: none;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
