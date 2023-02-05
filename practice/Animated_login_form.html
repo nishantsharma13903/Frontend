@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <title>Login Form</title>
+
+        <style>
+
+            .main-container{
+                background-color: black;
+                height: 100vh;
+                transition: background-color 1s;
+            }
+
+            .ls-form{
+                height: 420px;
+                width: 35vw;
+                padding: 20px;
+                box-shadow: 3px 4px 7px white;
+                border-left: 1px solid white;
+                border-top: 1px solid white;
+                transition: background-color 1s;
+            }
+
+            .ls-form-heading{
+                height: 70px;
+                padding: 15px;
+                font-family: monospace;
+                font-weight: bold;
+                font-size: 30px;
+                color: white;
+                text-align: center;
+                border-bottom: 1px solid white;
+            }
+
+            label{
+                color: white;
+                height: 20px;
+                font-size: 17px;
+                margin-top: 12px;
+                position: relative;
+                top: 26px;
+                transition: top 0.5s,font-size 0.5s;
+            }
+
+            input{
+                width: 100%;
+                outline: none;
+                background-color: black;
+                border-width: 0px;
+                border-bottom: 1px solid white;
+                color: white;
+            }
+
+            ::-ms-reveal {
+                filter: invert(100%);
+            }
+
+            button{
+                height: 40px;
+                width: 120px;
+                border-width: 0px;
+                font-weight: bold;
+                border-radius: 2px;
+                transition: color 0.5s, background-color 0.5s, box-shadow 0.5s;
+            }
+
+            button:hover{
+                color: white;
+                background-color: black;
+                box-shadow: 2px 2px 5px white;
+            }
+
+            a{
+                color: white;
+            }
+
+            a:hover{
+                color: white;
+            }
+
+            @media screen and (max-width : 1100px){
+                .ls-form{
+                    width: 40vw;
+                }
+            }
+
+            @media screen and (max-width : 750px){
+                .ls-form{
+                    width: 60vw;
+                }
+            }
+
+        </style>
+
+    </head>
+    <body>
+        
+        <div class="main-container d-flex justify-content-center align-items-center">
+            <div class="ls-form">
+                <h2 class="ls-form-heading">Login</h2>
+                <form action="#">
+                    <div>
+                        <label for="" id="email-label">Email</label><br>
+                        <input type="email" id="email-id" onfocus="moveLabelUp(1)" onblur="moveLabelDown(1)">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="" id="pass-label">Password</label><br>
+                        <input type="password" id="pass-id" onfocus="moveLabelUp(2)" onblur="moveLabelDown(2)">
+                    </div>
+
+                    <br><br>
+
+                    <div style="text-align: center;">
+                        <button>Submit</button>
+                    </div>
+
+                    <br>
+
+                    <div style="text-align: center;">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+
+        <script>
+
+            function moveLabelUp(n){
+                if(n == 1){
+                    document.getElementById("email-label").style.top = "-5px";
+                    document.getElementById("email-label").style.fontSize = "19px";
+                }
+                else if(n == 2){
+                    document.getElementById("pass-label").style.top = "-5px";
+                    document.getElementById("pass-label").style.fontSize = "19px";
+                }
+            }
+
+            function moveLabelDown(n){
+                if(n == 1){
+                    let email = document.getElementById("email-id").value;
+                    if(!email){
+                        document.getElementById("email-label").style.top = "26px";
+                        document.getElementById("email-label").style.fontSize = "17px";
+                    }
+                }
+                else if(n == 2){
+                    let pass = document.getElementById("pass-id").value;
+                    if(!pass){
+                        document.getElementById("pass-label").style.top = "26px";
+                        document.getElementById("pass-label").style.fontSize = "17px";
+                    }
+                }
+            }
+
+        </script>
+
+    </body>
+</html>
