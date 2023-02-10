@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Show Card On Scroll</title>
+
+        <style>
+
+            body{
+                overflow-x: hidden;
+            }
+
+            .main-container{
+                background-image: url("D:\\Nishant\\others\\Neon_images\\OIP (7).jfif");
+                background-size: cover;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .heading{
+                color: red;
+                font-size: 70px;
+                text-align: center;
+            }
+
+            .animate-lr{
+                position: relative;
+                animation-name: show_content;
+                animation-duration: 1s;
+            }
+
+            .animate-rl{
+                position: relative;
+                animation-name: show_image;
+                animation-duration: 1s;
+            }
+
+            @keyframes show_image{
+                0%{left: 300px;opacity: 0;}
+                100%{left: 0px;opacity: 1;}
+            }
+
+            @keyframes show_content{
+                0%{right: 300px;opacity: 0;}
+                100%{right: 0px;opacity: 1;}
+            }
+
+        </style>
+
+    </head>
+    <body>
+        
+        <div class="main-container">
+            <h1 class="heading">Scroll Down<br><span style="font-size: 25px;color: coral;">to see scrolling effect</span></h1>
+        </div>
+        <br>
+        <div style="display: flex;">
+            <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1676048355/OIP34_d9idts.jpg" id="image" alt="" style="height: 300px;width: 300px;">
+            <div style="padding: 20px;" id="content">
+                <h1>Study</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati atque, soluta culpa ipsum in officia consequuntur possimus rerum tempora laborum, vitae rem, incidunt voluptate eum? Quidem atque quis quos harum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati atque, soluta culpa ipsum in officia consequuntur possimus rerum tempora laborum, vitae rem, incidunt voluptate eum? Quidem atque quis quos harum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati atque, soluta culpa ipsum in officia consequuntur possimus rerum tempora laborum, vitae rem, incidunt voluptate eum? Quidem atque quis quos harum.</p>
+            </div>
+        </div>
+        <br>
+
+        <script>
+
+            window.onscroll = function() {myFunction()};
+
+            function myFunction() {
+            if (document.documentElement.scrollTop > 50) {
+                document.getElementById("image").className = "animate-lr";
+                document.getElementById("content").className = "animate-rl";
+                console.log(document.documentElement.scrollTop);
+            }else{
+                document.getElementById("image").className = "";
+                document.getElementById("content").className = "";
+            }
+            }
+
+        </script>
+
+    </body>
+</html>
