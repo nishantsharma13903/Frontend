@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Profile Card</title>
+
+        <style>
+
+            body{
+                margin: 0px;
+            }
+
+            .main-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-image: linear-gradient(to right,white,whitesmoke,rgb(248, 184, 161));
+            }
+
+            .image{
+                position: absolute;
+                height: 325px;
+                width: 300px;
+                z-index: 2;
+                border: 1px solid black;
+            }
+
+            .profile-card{
+                position: relative;
+                top: 0px;
+                left: 0px;
+                height: 325px;
+                width: 300px;
+            }
+
+            .back-card{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                height: 325px;
+                width: 300px;
+                z-index: 1;
+                border: 1px solid black;
+                background-color: rgb(252, 225, 215);
+                box-shadow: 2px 4px 8px grey;
+                transition: transform 1s;
+            }
+
+            .profile-card:hover .back-card{
+                transform: translate(50px,50px);
+            }
+
+            .social-container{
+                height: 275px;
+                width: 300px;
+                display: flex;
+                justify-content: end;
+            }
+
+            .social{
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+            }
+
+            .name{
+                height: 50px;
+                border-top: 1px solid black;
+                text-align: center;
+            }
+
+            h1{
+                margin: 0px;
+            }
+
+            .fa{
+                font-size: 40px;
+                margin: 15px 5px;
+                color: red;
+                text-decoration: none;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        
+        <div class="main-container">
+            <div class="profile-card">
+                <img src="https://res.cloudinary.com/domn9fwdf/image/upload/v1675428500/R_k8ucb6.jpg" alt="" class="image">
+                <div class="back-card">
+                    <div class="social-container">
+                        <div class="social">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-snapchat"></a>
+                        </div>
+                    </div>
+                    
+                    <div class="name">
+                        <h1>Justin Bieber</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
