@@ -18,7 +18,6 @@
                 background-color: black;
                 color: white;
                 height: 100vh;
-                width: 100vw;
             }
 
             .main-container-heading{
@@ -26,30 +25,29 @@
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 text-decoration: underline;
                 margin-bottom: 35px;
-                /* color: red; */
             }
 
             .center-element{
                 text-align: center;
             }
 
-            .sl-form-container{ /* perspective ki wjh se use kiya hai */
+            .sl-form-container{ 
                 width: 38vw;
                 height: 50vh;
                 border-radius: 25px;
                 perspective: 1400px;
             }
 
-            .sl-form{ /* ye box hai jiske andr front and back form pde hai(jaise hi 180deg rotate hoga back form dikhega) */
+            .sl-form{ 
                 width: 38vw;
                 height: 50vh;
                 position: relative;
                 transform: rotateY(0deg);
-                transform-style: preserve-3d; /* Agr ye nhi hoga to sirf front dikhega(mtlb no 3d effect) */
-                transition: transform 2s;
+                transform-style: preserve-3d;
+                transition: transform 1s;
             }
 
-            .back{ /* back form hai jise hmne phle hi 180deg ghuma diya aur backface hidden kr diya */
+            .back{
                 position: absolute;
                 backface-visibility: hidden;
                 transform: rotateY(180deg);
@@ -60,7 +58,7 @@
                 border-radius: 25px;
             }
 
-            .front{ /* ye front hai jo hme shuru me dikhega */
+            .front{
                 position: absolute;
                 backface-visibility: hidden;
                 background-color: rgb(53, 52, 52);
@@ -70,7 +68,6 @@
                 border-radius: 25px;
             }
 
-
             input{
                 width: 100%;
                 height: 35px;
@@ -78,7 +75,6 @@
                 padding-left: 40px;
                 border: 1px solid black;
                 background-color: rgb(176, 176, 176);
-            
             }
 
             label{
@@ -142,8 +138,6 @@
                 left: 0px;
                 transition: left 1s;
             }
-
-            
 
         </style>
     </head>
