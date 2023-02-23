@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="tic-tac-toe.css">
+
+    </head>
+
+    <body>
+        
+        <h2 class="ttt-game-heading">TIC-TAC-TOE</h2>
+
+        <div class="ttt-game-container d-flex justify-content-center align-items-center">
+            <div class="d-flex flex-column">
+                <div class="d-flex">
+                    <div class="box" onclick=displayOX(1)>
+                        <h2 class="zero" id="b1-player1">O</h2>
+                        <h2 class="one" id="b1-player2">X</h2>
+                    </div>
+                    <div class="box" onclick=displayOX(2)>
+                        <h2 class="zero" id="b2-player1">O</h2>
+                        <h2 class="one" id="b2-player2">X</h2>
+                    </div>
+                    <div class="box" onclick=displayOX(3)>
+                        <h2 class="zero" id="b3-player1">O</h2>
+                        <h2 class="one" id="b3-player2">X</h2>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <div class="box" onclick=displayOX(4)>
+                        <h2 class="zero" id="b4-player1">O</h2>
+                        <h2 class="one" id="b4-player2">X</h2>
+                    </div>
+                    <div class="box" onclick=displayOX(5)>
+                        <h2 class="zero" id="b5-player1">O</h2>
+                        <h2 class="one" id="b5-player2">X</h2>
+                    </div>
+                    <div class="box" onclick=displayOX(6)>
+                        <h2 class="zero" id="b6-player1">O</h2>
+                        <h2 class="one" id="b6-player2">X</h2>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <div class="box" onclick=displayOX(7)>
+                        <h2 class="zero" id="b7-player1">O</h2>
+                        <h2 class="one" id="b7-player2">X</h2>
+                    </div>
+                    <div class="box" onclick=displayOX(8)>
+                        <h2 class="zero" id="b8-player1">O</h2>
+                        <h2 class="one" id="b8-player2">X</h2>
+                    </div>
+                    <div class="box" onclick=displayOX(9)>
+                        <h2 class="zero" id="b9-player1">O</h2>
+                        <h2 class="one" id="b9-player2">X</h2>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <p id="whowin" class="winner-player">Turn - Player 1</p>
+        </div>
+        <div class="d-flex justify-content-end">
+            <button class="button btn btn-danger" onclick=window.location.reload()>Clear</button>
+        </div>
+
+        <script src="tic-tac-toe.js"></script>
+
+    </body>
+</html>
