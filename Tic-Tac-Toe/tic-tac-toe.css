@@ -1,0 +1,46 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("https://res.cloudinary.com/domn9fwdf/image/upload/v1677170869/background-wave_nsdr91.jpg");
+}
+
+.ttt-game-heading{
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-weight: bold;
+    text-align: center;
+    color: coral;
+    text-decoration: underline;
+}
+
+.ttt-game-container{
+    height: 70vh;
+    width: 100vw;
+}
+
+.box{
+    height: 110px;
+    width: 110px;
+    background-color: skyblue;
+    margin: 2px;
+    box-shadow: 2px 4px 5px blue;
+    cursor: pointer;
+}
+
+.zero, .one{
+    font-size: 100px;
+    text-align: center;
+    display: none;
+}
+
+.button{
+    width: 110px;
+    margin-right: 175px;
+}
+
+.winner-player{
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+    text-shadow: 2px 2px 10px white;
+}
