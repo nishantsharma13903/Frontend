@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="d-rendering-flickering-blinking-red-blue-neon-sign-black-background-cinema-movie-film-entertainment-sign-d-rendering-flickering-100820472.jpg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Movie:Watch Your Movies</title>
+    </head>
+    <body>
+        
+      <div class="main-container">
+
+        <div class="navbar">
+          <div class="nb-sec d-row nb-sec1">
+              <img src="d-rendering-flickering-blinking-red-blue-neon-sign-black-background-cinema-movie-film-entertainment-sign-d-rendering-flickering-100820472.jpg" alt="" class="nb-logo">
+              <h1 class="navbar-heading">Movie <br> <span style="margin-left: 40px;">Web</span></h1>
+          </div>
+          <div class="nb-sec">
+              <ul class="d-row nb-sec-ul nb-sec2">
+                  <li class="nb-ul-list"><a href="javascript:void(0)" onclick="gotoHome()" class="nb-ul-link" style="border-bottom: 1px solid white;">Home</a></li>
+                  <li class="nb-ul-list"><a href="javascript:void(0)" onclick="showAbout()" class="nb-ul-link">About</a></li>
+                  <li class="dpd nb-ul-list">
+                    <a href="javascript:void(0)" class="nb-ul-link">Categories <i class="fa fa-caret-down"></i></a>
+                    <ul class="dpd-content" id="dpd-cont"></ul>
+                  </li>
+              </ul>
+          </div>
+          <div class="nb-sec d-row-end nb-sec3">
+              <input type="text" placeholder="Search" onfocus="inputFocus()" onblur="inputBlur()" onkeyup="showSearchData()" id="input-movie">
+              <i class="fa fa-search" onclick="focusSearch()" style="color: white;font-size: 22px;margin: 27px 25px;cursor: pointer;" id="search-icon"></i>
+              <i class="fa fa-close" onclick="closeSearch()" style="color: white;font-size: 28px;margin: 27px 25px;display: none;cursor: pointer;" id="close-icon"></i>
+          </div>
+          <div class="search-cont">
+            <div id="search-cont-id">
+            </div>
+          </div>
+
+          <div class="dpd2">
+            <i class="fa fa-bars" style="font-size: 30px;color: white;margin: 25px 8px 0px 0px;"></i>
+            <ul class="dpd-content2">
+              <li class="ul-list2"><a href="javascript:void(0)" class="ul-link2" onclick="gotoHome()">Home</a></li>
+              <li class="ul-list2"><a href="javascript:void(0)" class="ul-link2" onclick="showAbout()">About</a></li>
+              <li class="ul-list2"><a href="javascript:void(0)" class="ul-link2" onclick="showAbout()">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="home-container" id="home-cont">
+            <div class="carousel-movie">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators" style="z-index: 1;">
+                      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="ocZznoXN2rhcqV570i3gtbStLIO.jpg" alt="..." class="c-img">
+                        <div class="carousel-caption d-none d-md-block" style="z-index: 1;">
+                          <h1>The ShawShank</h1>
+                          <p>Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="1264783.webp" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption d-none d-md-block" style="z-index: 1;">
+                          <h1>The Inception</h1>
+                          <p>A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="R.jpg" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption d-none d-md-block" style="z-index: 1;">
+                          <h1>Lords Of Rings</h1>
+                          <p>While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="movie-type">
+
+              <div id="Trending">
+                <h2 class="type-heading">Trending Movies</h2>
+                <div class="movie-container d-row" id="trending-movie"></div>
+              </div>
+
+              <div id="Drama">
+                <h2 class="type-heading">Drama Movies</h2>
+                <div class="movie-container d-row" id="drama-movie"></div>
+              </div>
+
+              <div id="Crime">
+                <h2 class="type-heading">Crime Movies</h2>
+                <div class="movie-container d-row" id="crime-movie"></div>
+              </div>
+
+              <div id="Action">
+                <h2 class="type-heading">Action Movies</h2>
+                <div class="movie-container d-row" id="action-movie"></div>
+              </div>
+
+              <div class="d-row-cen">
+                <img src="R (1).jpg" alt="" class="mid-movie-img1">
+              </div>
+              
+              <div id="Adventure">
+                <h2 class="type-heading">Adventure Movies</h2>
+                <div class="movie-container d-row" id="adventure-movie"></div>
+              </div>
+              
+              <div id="Romance">
+                <h2 class="type-heading">Romance Movies</h2>
+                <div class="movie-container d-row" id="romance-movie"></div>
+              </div>
+
+              <div id="Comedy">
+                <h2 class="type-heading">Comedy Movies</h2>
+                <div class="movie-container d-row" id="comedy-movie"></div>
+              </div>
+
+              <div id="Mystery">
+                <h2 class="type-heading">Mystery Movies</h2>
+                <div class="movie-container d-row" id="mystery-movie"></div>
+              </div>
+
+              <div style="margin: 30px;">
+                <h3 style="color: white;text-align: center;margin: 60px 0px 40px;">Movies You should Watch...</h3>
+                <div class="d-row-sp" style="flex-wrap: wrap;">
+                  <img src="https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_QL75_UX380_CR0,0,380,562_.jpg" alt="" class="mid-movie-img2">
+                  <img src="R (2).jpg" alt="" class="mid-movie-img2">
+                  <img src="OIP (3).jpg" alt="" class="mid-movie-img2">
+                </div>
+              </div>
+
+              <div id="Sci-Fi">
+                <h2 class="type-heading">Sci - Fi Movies</h2>
+                <div class="movie-container d-row" id="scifi-movie"></div>
+              </div>
+
+              <div id="Biography">
+                <h2 class="type-heading">Biography Movies</h2>
+                <div class="movie-container d-row" id="biography-movie"></div>
+              </div>
+
+              <div id="Animation">
+                <h2 class="type-heading">Animation Movies</h2>
+                <div class="movie-container d-row" id="animation-movie"></div>
+              </div>
+
+              <div id="War">
+                <h2 class="type-heading">War Movies</h2>
+                <div class="movie-container d-row" id="war-movie"></div>
+              </div>
+
+              <div id="Thriller">
+                <h2 class="type-heading">Thriller Movies</h2>
+                <div class="movie-container d-row" id="thriller-movie"></div>
+              </div>
+
+              <div id="Family">
+                <h2 class="type-heading">Family Movies</h2>
+                <div class="movie-container d-row" id="family-movie"></div>
+              </div>
+
+              <div id="Horror">
+                <h2 class="type-heading">Horror Movies</h2>
+                <div class="movie-container d-row" id="horror-movie"></div>
+              </div>
+
+              <div id="Western">
+                <h2 class="type-heading">Western Movies</h2>
+                <div class="movie-container d-row" id="western-movie"></div>
+              </div>
+
+              <div id="History">
+                <h2 class="type-heading">History Movies</h2>
+                <div class="movie-container d-row" id="history-movie"></div>
+              </div>
+
+              <div id="Music">
+                <h2 class="type-heading">Music Movies</h2>
+                <div class="movie-container d-row" id="music-movie"></div>
+              </div>
+
+              <div id="Film-Noir">
+                <h2 class="type-heading">Film-Noir Movies</h2>
+                <div class="movie-container d-row" id="film-noir-movie"></div>
+              </div>
+
+              <div id="Musical">
+                <h2 class="type-heading">Musical Movies</h2>
+                <div class="movie-container d-row" id="musical-movie"></div>
+              </div>
+
+            </div><br>
+        </div>
+
+        <div class="video-container" id="video-cont">
+          <iframe id="videoId" src=""> </iframe>
+          <h2 id="mov-title"></h2>
+          <p id="mov-desc"></p>
+          <p id="mov-year"></p>
+          <br>
+          <h6 id="mov-dir"></h6>
+          <h6 id="mov-wrt"></h6>
+          <h6 id="mov-genre"></h6>
+          <h6 id="mov-rating"></h6>
+        </div>
+
+        <div class="about-container" id="about-cont">
+          <div class="about-flex">
+            <img src="download.jfif" alt="" class="about-img">
+            <div class="about-content">
+              <h2 style="margin: 15px 0px;">Nishant Sharma <div style="background-color: white;height: 5px;width: 50%;"></div></h2>
+              <p>Lorem, ipsum dolor sit amet consec adipisicing elit. Earum eaque, volutem facere sapiente enim obcti nesciunt? Doloremque facilis vero assumenda provident odit ipsa adipisci, illo magnam dignissimos? Magni, quis molestiae.</p>
+              <div class="d-row" style="margin: 12px;">
+                <i class="fa fa-envelope" style="font-size: 22px;margin-right: 15px;"></i>
+                <h6>nishantsharma13903@gmail.com</h6>
+              </div>
+              <div class="d-row" style="margin: 12px;">
+                <i class="fa fa-phone" style="font-size: 22px;margin-right: 15px;"></i>
+                <h6>8923666030</h6>
+              </div>
+              <br>
+              <h4>Social Link</h4>
+              <div class="d-row" style="margin: 12px;">
+                <i class="fa fa-github" style="font-size: 22px;margin-right: 15px;"></i>
+                <a href="https://github.com/nishantsharma13903" style="color: white;">Github Link</a>
+              </div>
+              <div class="d-row" style="margin: 12px;">
+                <i class="fa fa-linkedin" style="font-size: 22px;margin-right: 15px;"></i>
+                <a href="https://www.linkedin.com/in/nishant-sharma2348/" style="color: white;">Linkedin Link</a>
+              </div>
+              <div class="d-row" style="margin: 12px;">
+                <i class="fa fa-youtube" style="font-size: 22px;margin-right: 15px;"></i>
+                <a href="https://www.youtube.com/@nishantsharma9626" style="color: white;">Youtube Link</a>
+              </div>
+            </div>
+          </div>  
+        </div>
+          
+        <div class="footer d-row-sp">
+          <div style="width: 50%;" class="footer-div1">
+            <ul class="d-row-sp" style="list-style-type: none;justify-content: space-evenly;">
+              <li><a href="javascript:void(0)" onclick="gotoHome()">Home</a></li>
+              <li><a href="javascript:void(0)" onclick="showAbout()">About</a></li>
+              <li><a href="javascript:void(0)" onclick="showAbout()">Contact</a></li>
+            </ul>
+            <br>
+            <div class="content">
+              <h3>Lorem Ipsum</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ab minima enim culpa labore. Laborum nostrum harum expedita ipsum rem, qui labore sequi saepe maiores quae consectetur vero eveniet sed.</p>
+            </div>
+          </div>
+          <div class="d-row-sp">
+            <div style="margin-right: 18px;">
+              <h3 class="footer-heading">Follow On</h3>
+              <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=100054401231287">Facebook</a></li>
+                <li><a href="https://www.instagram.com/nishantsharma13903/">Instagram</a></li>
+                <li><a href="https://www.youtube.com/@nishantsharma9626">Youtube</a></li>
+                <li><a href="https://twitter.com/Nishant_2348">Twitter</a></li>
+              </ul>
+            </div>
+
+            <div style="margin-left: 18px;text-align: center;">
+              <h3 class="footer-heading">Download Now</h3>
+              <div class="d-row">
+                <i class="fa fa-apple" style="font-size: 35px;color: white;margin-right: 20px;cursor: pointer;"></i>
+                <i class="fa fa-google" style="font-size: 35px;color: white;margin-right: 20px;cursor: pointer;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
