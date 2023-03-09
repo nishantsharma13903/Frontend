@@ -3,6 +3,7 @@ const link_eff = document.querySelectorAll(".nb-ul-link");
 const cont = document.getElementById("search-cont-id");
 var movie_data = [];
 
+// Enter your Movie API Here .....
 const options = {
 	method: 'GET',
 	headers: {
@@ -20,8 +21,6 @@ fetch('https://imdb-top-100-movies.p.rapidapi.com/', options)
         })
     })
 	.catch(err => console.error(err));
-
-
 
 
 function createMovieCard(data){
