@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+}
+
+.main-container{
+    height: 100vh;
+    position: relative;  
+}
+
+.main-head{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-style: italic;
+    text-decoration: underline;
+    padding-top: 10px;
+    margin: 0px;
+}
+
+.mc-sec1{
+    height: 50vh;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.mc-sec2{
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(14, 4, 4);
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.clock-outer{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+}
+
+.clock{
+    border: 10px solid coral;
+    height: 250px;
+    width: 250px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mid-clock{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 3;
+}
+
+.h-hand{
+    position: absolute;
+    top: 60px;
+    height: 65px;
+    width: 9px;
+    border-radius: 10px;
+    background-color: tomato;
+    transform-origin: bottom;
+    z-index: 3;
+}
+
+.m-hand{
+    position: absolute;
+    top: 55px;
+    height: 70px;
+    width: 8px;
+    border-radius: 10px;
+    background-color: rgb(255, 71, 184);
+    transform-origin: bottom;
+    z-index: 3;
+}
+
+.s-hand{
+    position: absolute;
+    top: 45px;
+    height: 82px;
+    width: 5px;
+    border-radius: 10px;
+    background-color: blue;
+    transform-origin: bottom;
+    z-index: 3;
+}
+
+.clock-num{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.meridiem{
+    position: absolute;
+    left: 38%;
+    top: -18%;
+    background-color: red;
+    height: 25px;
+    width: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    color: aliceblue;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.sv1{
+    position: absolute;
+    top: -0%;
+    left: 5%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: red;
+    z-index: 1;
+}
+
+.sv2{
+    position: absolute;
+    top: -0%;
+    right: 5%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: red;
+    z-index: 1;
+}
+
+#date-text{
+    color: white;
+    margin: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 700px){
+    .clock-outer{
+        left: 44%;
+    }
+}
